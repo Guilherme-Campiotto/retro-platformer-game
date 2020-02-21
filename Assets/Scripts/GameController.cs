@@ -28,6 +28,12 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
+
+        if(gravityController != null)
+        {
+            gravityController.setGravityDefault();
+        }
+
         GameObject soundObject = GameObject.Find("SoundController");
         GameObject canvas = GameObject.Find("Canvas");
         if (!soundObject.activeSelf)
