@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -500,7 +500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354746767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8016711, y: -7.4200587, z: 10.004488}
+  m_LocalPosition: {x: -0.8016711, y: -9.39, z: 10.004488}
   m_LocalScale: {x: 54.82374, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 318467112}
@@ -1764,7 +1764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelInicialPosition: {x: 7.41, y: 4.32}
-  gamePanel: {fileID: 0}
   endGamePanel: {fileID: 0}
   panelActive: 0
   player: {fileID: 4968219357995338621}
@@ -1774,13 +1773,6 @@ MonoBehaviour:
   soundController: {fileID: 0}
   levelComplete: 0
   animatorFadeLevel: {fileID: 0}
-  menu: {fileID: 0}
-  theme1: {fileID: 0}
-  theme2: {fileID: 0}
-  theme3: {fileID: 0}
-  theme4: {fileID: 0}
-  theme5: {fileID: 0}
-  theme6: {fileID: 0}
 --- !u!4 &1057646320
 Transform:
   m_ObjectHideFlags: 0

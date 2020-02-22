@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private MenuOptions menuOptions;
     public bool isGamePaused = false;
 
+    public float rigidBodyValocityY;
+
     private void Start()
     {
         menuOptions = GameObject.Find("Canvas").GetComponent<MenuOptions>();
@@ -40,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
             isGamePaused = true;
             menuOptions.ChangeGameState();
         }
+
+        //teste
+
+        rigidBodyValocityY = GetComponent<Rigidbody2D>().velocity.y;
     }
 
     // Update a fixed amount amount of time per second
@@ -111,11 +117,19 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if(isInAir == true && ((Physics2D.gravity.y < 0 && GetComponent<Rigidbody2D>().velocity.y < 0f) || (Physics2D.gravity.y > 0 && GetComponent<Rigidbody2D>().velocity.y > 0f)))
+        if(isInAir && ((Physics2D.gravity.y < 0f && GetComponent<Rigidbody2D>().velocity.y < 0f) || (Physics2D.gravity.y > 0f && GetComponent<Rigidbody2D>().velocity.y > 0.2f)))
         {
             animator.SetBool("isFalling", true);
             animator.SetBool("isJumping", false);
             animator.SetBool("isDoubleJumping", false);
+        }
+
+        if(GetComponent<Rigidbody2D>().velocity.y == 0)
+        {
+            animator.SetBool("isFalling", false);
+        } else
+        {
+            animator.SetBool("isFalling", true);
         }
 
     }
@@ -125,9 +139,9 @@ public class PlayerMovement : MonoBehaviour
         // Caso a aceleração seja 0
         if((Physics2D.gravity.y < 0 && GetComponent<Rigidbody2D>().velocity.y < 0f) || (Physics2D.gravity.y > 0 && GetComponent<Rigidbody2D>().velocity.y > 0f))
         {
+            animator.SetBool("isFalling", false);
             animator.SetBool("isJumping", false);
             animator.SetBool("isDoubleJumping", false);
-            animator.SetBool("isFalling", false);
             isInAir = false;
         }
     }

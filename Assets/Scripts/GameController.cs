@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour
 
         GameObject soundObject = GameObject.Find("SoundController");
         GameObject canvas = GameObject.Find("Canvas");
+
         if (!soundObject.activeSelf)
         {
             soundObject.SetActive(true);

@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 
 public class MenuOptions : MonoBehaviour
 {
-
     public Text soundText;
     public static string soundConfig;
     public GameObject settingsPanel;
@@ -17,7 +16,7 @@ public class MenuOptions : MonoBehaviour
     public GameObject pauseMenuPanel;
     public GameObject resumeBtn;
     public bool fullScreen;
-    public Toggle windowModeToggle;
+    public Toggle windowScreenToggle;
     public Dropdown dropdownMenu;
     public bool gamePaused = false;
     public Animator animator;
@@ -43,6 +42,11 @@ public class MenuOptions : MonoBehaviour
         }
 
         SetButtonPreSelected("ButtonPlay");
+        
+        if(windowScreenToggle != null)
+        {
+            windowScreenToggle.isOn = Screen.fullScreen;
+        }
 
     }
 
@@ -89,7 +93,7 @@ public class MenuOptions : MonoBehaviour
             {
                 soundConfigButton.GetComponent<Image>().sprite = soundOffSprite;
             }
-            windowModeToggle.isOn = false;
+
         }
 
     }
@@ -241,14 +245,15 @@ public class MenuOptions : MonoBehaviour
 
     public void ToggleFullScreen()
     {
-        Screen.fullScreen = !Screen.fullScreen;
-        if(Screen.fullScreen)
+        Screen.fullScreen = windowScreenToggle.isOn;
+        if (Screen.fullScreen)
         {
             fullScreen = true;
         } else
         {
             fullScreen = false;
         }
+
     }
 
     public void ChangeResolution()
@@ -274,10 +279,7 @@ public class MenuOptions : MonoBehaviour
                 break;
         }
 
-        if(!fullScreen)
-        {
-            ToggleFullScreen();
-        }
+        windowScreenToggle.isOn = true;
     }
 
     void SetButtonPreSelected(string buttonName)
