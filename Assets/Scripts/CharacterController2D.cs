@@ -26,7 +26,7 @@ public class CharacterController2D : MonoBehaviour
     public RaycastHit2D wallCheckHit;
     public RaycastHit2D wallLeftCheckHit;
     public Rigidbody2D m_Rigidbody2D;
-	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+	public bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
     public AudioClip deathSound;
