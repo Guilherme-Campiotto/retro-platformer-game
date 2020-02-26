@@ -12,6 +12,7 @@ TagManager:
   - trampolineFoward
   - SoundController
   - trampoline
+  - tank
   layers:
   - Default
   - TransparentFX

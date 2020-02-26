@@ -245,7 +245,6 @@ public class MenuOptions : MonoBehaviour
 
     public void ToggleFullScreen()
     {
-        Debug.Log("toggleFullscreen");
         Screen.fullScreen = windowScreenToggle.isOn;
         if (Screen.fullScreen)
         {
