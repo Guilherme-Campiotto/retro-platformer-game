@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2690493886227824931}
   - component: {fileID: 885171774189157435}
   - component: {fileID: 7108666092831763023}
-  - component: {fileID: 557098189}
   - component: {fileID: 557098188}
   m_Layer: 0
   m_Name: Tank
@@ -129,24 +128,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6499696, y: 0.18011045}
   m_EdgeRadius: 0
---- !u!114 &557098189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3329835587142128487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3c2392bc3cce14c96c455f373c5d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabMissel: {fileID: 4916972863555874080, guid: 6cef5b454cbb82f479625c2411748bfb,
-    type: 3}
-  shootInterval: 2
-  firstShootTime: 2
-  missilePoint: {fileID: 1197846090780834624}
-  missileLaunchSound: {fileID: 0}
 --- !u!61 &557098188
 BoxCollider2D:
   m_ObjectHideFlags: 0
