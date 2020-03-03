@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -497,13 +497,6 @@ MonoBehaviour:
   soundController: {fileID: 0}
   levelComplete: 0
   animatorFadeLevel: {fileID: 0}
-  menu: {fileID: 0}
-  theme1: {fileID: 8300000, guid: 4f42373b16bc68b499fcadf49d4b815a, type: 3}
-  theme2: {fileID: 0}
-  theme3: {fileID: 0}
-  theme4: {fileID: 0}
-  theme5: {fileID: 0}
-  theme6: {fileID: 0}
 --- !u!4 &1057646320
 Transform:
   m_ObjectHideFlags: 0
@@ -1597,6 +1590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 380305734863692547, guid: c8bb1bf7373b653468a9dbad388dae57,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8bb1bf7373b653468a9dbad388dae57, type: 3}

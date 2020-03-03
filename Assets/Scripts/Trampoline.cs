@@ -10,6 +10,8 @@ public class Trampoline : MonoBehaviour
     private SoundController soundController;
     public AudioClip trampolineSound;
 
+    public Animator animator;
+
     private void Start()
     {
         soundController = GameObject.Find("SoundController").GetComponent<SoundController>();
@@ -26,6 +28,8 @@ public class Trampoline : MonoBehaviour
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, 0);
             player.GetComponent<Rigidbody2D>().AddForce(Vector2.up * trampolineForce);
             soundController.PlayAudioOnce(trampolineSound);
+
+            animator.Play("Trampolim", 0);
         }
 
     }

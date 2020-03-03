@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.26
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -443,7 +443,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -882,7 +882,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67510c1e85a03a2499b76b14dc8a28e6, type: 3}
 --- !u!1001 &739097470
@@ -905,7 +905,7 @@ PrefabInstance:
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.53
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -991,7 +991,7 @@ PrefabInstance:
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -2136,6 +2136,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7469110874045400826, guid: f8ee1f03e295bbe43b892f08802e7998,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ee1f03e295bbe43b892f08802e7998, type: 3}
 --- !u!1001 &90854261553277792
@@ -2227,7 +2232,7 @@ PrefabInstance:
     - target: {fileID: 7134936486323105402, guid: 84d38e06f7696bd4fbe267565fe1afdf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.72
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 7134936486323105402, guid: 84d38e06f7696bd4fbe267565fe1afdf,
         type: 3}
@@ -2365,31 +2370,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 6540924282555749337, guid: 5dc977b379d2eb743b59fd95dd40900e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43686417
-      objectReference: {fileID: 0}
-    - target: {fileID: 6540924282555749337, guid: 5dc977b379d2eb743b59fd95dd40900e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.43686417
-      objectReference: {fileID: 0}
-    - target: {fileID: 6540924282555749339, guid: 5dc977b379d2eb743b59fd95dd40900e,
-        type: 3}
-      propertyPath: launchForceX
-      value: 650
-      objectReference: {fileID: 0}
-    - target: {fileID: 6540924282555749339, guid: 5dc977b379d2eb743b59fd95dd40900e,
-        type: 3}
-      propertyPath: distanceFire
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 6540924282555749339, guid: 5dc977b379d2eb743b59fd95dd40900e,
-        type: 3}
-      propertyPath: launchForceY
-      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dc977b379d2eb743b59fd95dd40900e, type: 3}

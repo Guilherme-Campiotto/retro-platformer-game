@@ -10,10 +10,15 @@ public class MenuOptions : MonoBehaviour
     public static string soundConfig;
     public GameObject settingsPanel;
     public SoundController soundController;
+
     public GameObject controlsPanel;
     public GameObject instructionsPanel;
     public GameObject creditsPanel;
     public GameObject pauseMenuPanel;
+    public GameObject ps4ImageControls;
+    public GameObject xboxImageControls;
+    public GameObject keyboardImageControls;
+
     public GameObject resumeBtn;
     public bool fullScreen;
     public Toggle windowScreenToggle;
@@ -114,7 +119,10 @@ public class MenuOptions : MonoBehaviour
             }
         }
 
-        CheckControllerConected();
+        if(xboxImageControls != null && ps4ImageControls != null && keyboardImageControls != null)
+        {
+            CheckControllerConected();
+        }
     }
 
     public void changeAudio()
@@ -209,21 +217,25 @@ public class MenuOptions : MonoBehaviour
         string[] names = Input.GetJoystickNames();
         for (int x = 0; x < names.Length; x++)
         {
-            print(names.Length);
             if (names[x].Length == 19)
             {
-                print("PS4 CONTROLLER IS CONNECTED");
+                //print("PS4 CONTROLLER IS CONNECTED");
                 ps4Controller = true;
                 xboxOneController = false;
             } else if (names[x].Length == 33)
             {
-                print("XBOX ONE CONTROLLER IS CONNECTED");
+                //print("XBOX ONE CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = true;
             }
             else if (names[x].Length == 0)
             {
-                print("Default CONTROLLER IS CONNECTED");
+                //print("Default CONTROLLER IS CONNECTED");
+                ps4Controller = false;
+                xboxOneController = false;
+            } else
+            {
+                //print("Using only keyboard");
                 ps4Controller = false;
                 xboxOneController = false;
             }
@@ -231,15 +243,23 @@ public class MenuOptions : MonoBehaviour
 
         if (xboxOneController)
         {
-            //Adicionar imagem dos controles do xbox
+            xboxImageControls.SetActive(true);
+            ps4ImageControls.SetActive(false);
+            keyboardImageControls.SetActive(false);
         }
         else if (ps4Controller)
         {
             //Adicionar imagem dos controles do ps4
+            xboxImageControls.SetActive(false);
+            ps4ImageControls.SetActive(true);
+            keyboardImageControls.SetActive(false);
         }
         else
         {
             //Adicionar imagem dos controles do teclado
+            xboxImageControls.SetActive(false);
+            ps4ImageControls.SetActive(false);
+            keyboardImageControls.SetActive(true);
         }
     }
 

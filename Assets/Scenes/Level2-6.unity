@@ -2270,32 +2270,32 @@ PrefabInstance:
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.04
+      value: -4.7391
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 18.110865
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
@@ -2325,17 +2325,17 @@ PrefabInstance:
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.87095064
+      value: 0.49259084
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.47004822
+      value: 0.2887766
       objectReference: {fileID: 0}
     - target: {fileID: 3774987844603566680, guid: 79107dd3dbc6f7649b6865bb92816998,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.9505024
+      value: 3.8814034
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79107dd3dbc6f7649b6865bb92816998, type: 3}

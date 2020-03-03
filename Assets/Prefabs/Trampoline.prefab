@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3774987844603566663}
   - component: {fileID: 3774987844603566662}
   - component: {fileID: 4432759183271686375}
+  - component: {fileID: 2645335831811900940}
   m_Layer: 0
   m_Name: Trampoline
   m_TagString: trampoline
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3774987844603566661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.38, y: -1.6, z: 1}
-  m_LocalScale: {x: 1.1457407, y: 0.6183512, z: 3.8814034}
+  m_LocalScale: {x: 0.49259084, y: 0.2887766, z: 3.8814034}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96841ed4482958b4e90040e0c4ad5b79, type: 3}
+  m_Sprite: {fileID: 5058976081925978590, guid: 2588081e9ab52f04989ea33dfa188477,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,18 +97,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0020130575, y: -0.01095736}
+  m_Offset: {x: -0.017844796, y: 0.00097346306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.62, y: 1.66}
+    oldSize: {x: 3.8, y: 4.21}
     newSize: {x: 5.4, y: 5.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.345763, y: 1.5828857}
+  m_Size: {x: 3.5765016, y: 4.0266023}
   m_EdgeRadius: 0
 --- !u!114 &4432759183271686375
 MonoBehaviour:
@@ -122,3 +124,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trampolineForce: 1000
   trampolineSound: {fileID: 8300000, guid: e0f304ae532060b4084ac190c2af8b15, type: 3}
+  animator: {fileID: 2645335831811900940}
+--- !u!95 &2645335831811900940
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774987844603566661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7494777d423ebe478b802336f16eea2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

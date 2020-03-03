@@ -3109,7 +3109,7 @@ PrefabInstance:
     - target: {fileID: 4834894396931273764, guid: a5a800d29533fd84e9d56ff56ef86b55,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -2.79
+      value: -2.7900002
       objectReference: {fileID: 0}
     - target: {fileID: 4834894396931273764, guid: a5a800d29533fd84e9d56ff56ef86b55,
         type: 3}
@@ -3129,7 +3129,7 @@ PrefabInstance:
     - target: {fileID: 4834894396931273764, guid: a5a800d29533fd84e9d56ff56ef86b55,
         type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 4
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 426176376, guid: a5a800d29533fd84e9d56ff56ef86b55, type: 3}
       propertyPath: slider
@@ -3137,11 +3137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426176376, guid: a5a800d29533fd84e9d56ff56ef86b55, type: 3}
       propertyPath: motorSpeedUp
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 426176376, guid: a5a800d29533fd84e9d56ff56ef86b55, type: 3}
       propertyPath: motorSpeedDown
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5404283655631429277, guid: a5a800d29533fd84e9d56ff56ef86b55,
         type: 3}

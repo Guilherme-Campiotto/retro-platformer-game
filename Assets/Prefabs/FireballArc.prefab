@@ -1,5 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &615246934418170384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6541445492017633337}
+  - component: {fileID: 1430761566901699161}
+  m_Layer: 0
+  m_Name: Freeform Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6541445492017633337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615246934418170384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6540924282555749337}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1430761566901699161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615246934418170384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.44
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.59
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.70709634, y: -0.34558108, z: 0}
+  - {x: -0.5036509, y: -0.83130366, z: 0}
+  - {x: -0.11155627, y: -1.0576797, z: 0}
+  - {x: 0.28216356, y: -0.9190397, z: 0}
+  - {x: 0.5411414, y: -0.7723116, z: 0}
+  - {x: 0.49703845, y: -0.3240272, z: 0}
+  - {x: 0.42123976, y: 0.046250455, z: 0}
+  - {x: 0.3667373, y: 0.4201006, z: 0}
+  - {x: -0.0671806, y: 0.92073834, z: 0}
+  - {x: -0.20235644, y: 0.5024164, z: 0}
 --- !u!1 &6540924282555749338
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,8 +105,9 @@ Transform:
   m_GameObject: {fileID: 6540924282555749338}
   m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
   m_LocalPosition: {x: -6.72, y: -5.44, z: 0}
-  m_LocalScale: {x: 0.43686423, y: 0.43686423, z: 0.43686423}
-  m_Children: []
+  m_LocalScale: {x: 0.43686417, y: 0.43686417, z: 0.43686423}
+  m_Children:
+  - {fileID: 6541445492017633337}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
@@ -95,10 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8807e9093854b6c41a70694ec55bf5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForceX: 350
+  launchForceX: 650
   launchForceY: 300
   angle: -120
-  distanceFire: 0
+  distanceFire: 500
 --- !u!50 &6540924282555749342
 Rigidbody2D:
   serializedVersion: 4
