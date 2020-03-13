@@ -1274,7 +1274,7 @@ PrefabInstance:
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 713575952898140857, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -1945,7 +1945,7 @@ PrefabInstance:
     - target: {fileID: 2581180013543954017, guid: 8b0fab669e9ff0f46aad2b50708983c9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.3399997
+      value: 6.93
       objectReference: {fileID: 0}
     - target: {fileID: 2581180013543954017, guid: 8b0fab669e9ff0f46aad2b50708983c9,
         type: 3}
@@ -2085,7 +2085,7 @@ PrefabInstance:
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
@@ -2132,6 +2132,11 @@ PrefabInstance:
       propertyPath: moveRight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4804482819827483057, guid: d19129770f54fa64fafec25802566162,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 5425661241941682953, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2152,11 +2157,6 @@ PrefabInstance:
       propertyPath: m_TranslationLimits.m_UpperTranslation
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4804482819827483057, guid: d19129770f54fa64fafec25802566162,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19129770f54fa64fafec25802566162, type: 3}
 --- !u!4 &997549904 stripped
@@ -2250,8 +2250,8 @@ Transform:
   - {fileID: 597494007}
   - {fileID: 68495215}
   - {fileID: 617617409}
-  - {fileID: 617882594}
   - {fileID: 1933128208}
+  - {fileID: 617882594}
   - {fileID: 1579457009}
   - {fileID: 997549904}
   m_Father: {fileID: 0}
@@ -2652,7 +2652,7 @@ PrefabInstance:
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.89
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
@@ -2687,7 +2687,7 @@ PrefabInstance:
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
@@ -2727,8 +2727,13 @@ PrefabInstance:
     - target: {fileID: 5425661241941682955, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: speed
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4804482819827483057, guid: d19129770f54fa64fafec25802566162,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 5425661241941682953, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2749,11 +2754,6 @@ PrefabInstance:
       propertyPath: m_TranslationLimits.m_UpperTranslation
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4804482819827483057, guid: d19129770f54fa64fafec25802566162,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19129770f54fa64fafec25802566162, type: 3}
 --- !u!4 &1579457009 stripped
@@ -3282,7 +3282,7 @@ PrefabInstance:
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.01
+      value: -2.92
       objectReference: {fileID: 0}
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
@@ -3317,7 +3317,7 @@ PrefabInstance:
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4804482819827483054, guid: d19129770f54fa64fafec25802566162,
         type: 3}
@@ -3357,8 +3357,13 @@ PrefabInstance:
     - target: {fileID: 5425661241941682955, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: speed
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4804482819827483057, guid: d19129770f54fa64fafec25802566162,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 5425661241941682953, guid: d19129770f54fa64fafec25802566162,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -3379,11 +3384,6 @@ PrefabInstance:
       propertyPath: m_TranslationLimits.m_UpperTranslation
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4804482819827483057, guid: d19129770f54fa64fafec25802566162,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19129770f54fa64fafec25802566162, type: 3}
 --- !u!4 &1933128208 stripped
