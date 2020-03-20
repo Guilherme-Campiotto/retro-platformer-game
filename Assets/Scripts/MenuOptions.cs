@@ -15,9 +15,13 @@ public class MenuOptions : MonoBehaviour
     public GameObject instructionsPanel;
     public GameObject creditsPanel;
     public GameObject pauseMenuPanel;
+
     public GameObject ps4ImageControls;
     public GameObject xboxImageControls;
     public GameObject keyboardImageControls;
+    public GameObject ps4ImageTutorial;
+    public GameObject xboxImageTutorial;
+    public GameObject keyboardImageTutorial;
 
     public GameObject resumeBtn;
     public bool fullScreen;
@@ -31,7 +35,7 @@ public class MenuOptions : MonoBehaviour
     public AudioMixer audioMixer;
 
     private bool ps4Controller = false;
-    private bool xboxOneController = true;
+    private bool xboxOneController = false;
 
     // Start is called before the first frame update
     void Start()
@@ -214,28 +218,31 @@ public class MenuOptions : MonoBehaviour
 
     public void CheckControllerConected()
     {
+        
         string[] names = Input.GetJoystickNames();
+        print(names);
         for (int x = 0; x < names.Length; x++)
         {
+            print(names[x]);
             if (names[x].Length == 19)
             {
-                //print("PS4 CONTROLLER IS CONNECTED");
+                print("PS4 CONTROLLER IS CONNECTED");
                 ps4Controller = true;
                 xboxOneController = false;
             } else if (names[x].Length == 33)
             {
-                //print("XBOX ONE CONTROLLER IS CONNECTED");
+                print("XBOX ONE CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = true;
             }
             else if (names[x].Length == 0)
             {
-                //print("Default CONTROLLER IS CONNECTED");
+                print("Default CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = false;
             } else
             {
-                //print("Using only keyboard");
+                print("Using only keyboard");
                 ps4Controller = false;
                 xboxOneController = false;
             }
@@ -246,6 +253,14 @@ public class MenuOptions : MonoBehaviour
             xboxImageControls.SetActive(true);
             ps4ImageControls.SetActive(false);
             keyboardImageControls.SetActive(false);
+
+            if(xboxImageTutorial != null && ps4ImageTutorial && keyboardImageTutorial != null)
+            {
+                xboxImageTutorial.SetActive(true);
+                ps4ImageTutorial.SetActive(false);
+                keyboardImageTutorial.SetActive(false);
+            }
+
         }
         else if (ps4Controller)
         {
@@ -253,6 +268,14 @@ public class MenuOptions : MonoBehaviour
             xboxImageControls.SetActive(false);
             ps4ImageControls.SetActive(true);
             keyboardImageControls.SetActive(false);
+
+            if (xboxImageTutorial != null && ps4ImageTutorial && keyboardImageTutorial != null)
+            {
+                xboxImageTutorial.SetActive(false);
+                ps4ImageTutorial.SetActive(true);
+                keyboardImageTutorial.SetActive(false);
+            }
+
         }
         else
         {
@@ -260,6 +283,13 @@ public class MenuOptions : MonoBehaviour
             xboxImageControls.SetActive(false);
             ps4ImageControls.SetActive(false);
             keyboardImageControls.SetActive(true);
+
+            if (xboxImageTutorial != null && ps4ImageTutorial && keyboardImageTutorial != null)
+            {
+                xboxImageTutorial.SetActive(false);
+                ps4ImageTutorial.SetActive(false);
+                keyboardImageTutorial.SetActive(true);
+            }
         }
     }
 
