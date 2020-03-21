@@ -220,29 +220,27 @@ public class MenuOptions : MonoBehaviour
     {
         
         string[] names = Input.GetJoystickNames();
-        print(names);
         for (int x = 0; x < names.Length; x++)
         {
-            print(names[x]);
             if (names[x].Length == 19)
             {
-                print("PS4 CONTROLLER IS CONNECTED");
+                //print("PS4 CONTROLLER IS CONNECTED");
                 ps4Controller = true;
                 xboxOneController = false;
             } else if (names[x].Length == 33)
             {
-                print("XBOX ONE CONTROLLER IS CONNECTED");
+                //print("XBOX ONE CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = true;
             }
             else if (names[x].Length == 0)
             {
-                print("Default CONTROLLER IS CONNECTED");
+                //print("Default CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = false;
             } else
             {
-                print("Using only keyboard");
+                //print("Using only keyboard");
                 ps4Controller = false;
                 xboxOneController = false;
             }
@@ -350,7 +348,6 @@ public class MenuOptions : MonoBehaviour
     {
         pauseMenuPanel.SetActive(false);
         PlayerMovement player = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        player.isGamePaused = false;
 
         Time.timeScale = 1f;
     }

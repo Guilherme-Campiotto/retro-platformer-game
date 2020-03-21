@@ -18,8 +18,6 @@ public class PlayerMovement : MonoBehaviour
     private MenuOptions menuOptions;
     public bool isGamePaused = false;
 
-    public float rigidBodyValocityY;
-
     private void Start()
     {
         menuOptions = GameObject.Find("Canvas").GetComponent<MenuOptions>();
@@ -37,15 +35,15 @@ public class PlayerMovement : MonoBehaviour
             CheckWallSlide();
         }
 
-        if(Input.GetButtonDown("Cancel"))
+        if(Input.GetButtonDown("Pause"))
         {
             isGamePaused = true;
             menuOptions.ChangeGameState();
         }
 
-        //teste
-
-        rigidBodyValocityY = GetComponent<Rigidbody2D>().velocity.y;
+        if(Time.timeScale == 1f) {
+            isGamePaused = false;
+        }
     }
 
     // Update a fixed amount amount of time per second
