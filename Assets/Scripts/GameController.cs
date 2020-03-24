@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
     public static AudioClip theme4;
     public static AudioClip theme5;
     public static AudioClip theme6;
+    public static AudioClip themeIntro;
 
     private GameObject steamAchievements;
     SteamAchievements scriptAchievments;
@@ -99,6 +100,13 @@ public class GameController : MonoBehaviour
         switch(sceneIndex)
         {
             case 2:
+                if (themeIntro == null)
+                {
+                    theme1 = theme2 = theme3 = theme4 = theme5 = theme6 = null;
+                    themeIntro = Resources.Load<AudioClip>("Sounds/Musics/Intro music - Deep_In_Space");
+                    soundController.PlayWithLoop(themeIntro);
+                }
+                break;
             case 3:
             case 4:
             case 5:
@@ -108,20 +116,21 @@ public class GameController : MonoBehaviour
             case 9:
             case 10:
             case 11:
-                if(theme1 == null)
+            case 12:
+                if (theme1 == null)
                 {
                     theme2 = theme3 = theme4 = theme5 = theme6 = null;
                     theme1 = Resources.Load<AudioClip>("Sounds/Musics/Theme_1");
                     soundController.PlayWithLoop(theme1);
                 }
                 break;
-            case 12:
             case 13:
             case 14:
             case 15:
             case 16:
             case 17:
             case 18:
+            case 19:
                 if (theme2 == null)
                 {
                     theme1 = theme3 = theme4 = theme5 = theme6 = null;
@@ -129,13 +138,13 @@ public class GameController : MonoBehaviour
                     soundController.PlayWithLoop(theme2);
                 }
                 break;
-            case 19:
             case 20:
             case 21:
             case 22:
             case 23:
             case 24:
             case 25:
+            case 26:
                 if (theme3 == null)
                 {
                     theme1 = theme2 = theme4 = theme5 = theme6 = null;
@@ -143,13 +152,13 @@ public class GameController : MonoBehaviour
                     soundController.PlayWithLoop(theme3);
                 }
                 break;
-            case 26:
             case 27:
             case 28:
             case 29:
             case 30:
             case 31:
             case 32:
+            case 33:
                 if (theme4 == null)
                 {
                     theme1 = theme2 = theme3 = theme5 = theme6 = null;
@@ -157,13 +166,13 @@ public class GameController : MonoBehaviour
                     soundController.PlayWithLoop(theme4);
                 }
                 break;
-            case 33:
             case 34:
             case 35:
             case 36:
             case 37:
             case 38:
             case 39:
+            case 40:
                 if (theme5 == null)
                 {
                     theme1 = theme2 = theme3 = theme4 = theme6 = null;
@@ -171,13 +180,13 @@ public class GameController : MonoBehaviour
                     soundController.PlayWithLoop(theme5);
                 }
                 break;
-            case 40:
             case 41:
             case 42:
             case 43:
             case 44:
             case 45:
             case 46:
+            case 47:
                 if (theme6 == null)
                 {
                     theme1 = theme2 = theme3 = theme4 = theme5 = null;

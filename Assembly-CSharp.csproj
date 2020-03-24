@@ -175,8 +175,8 @@
     <Compile Include="Assets\Scripts\StageSelectController.cs" />
     <Compile Include="Assets\Scripts\SteamAchievements.cs" />
     <Compile Include="Assets\Scripts\Steamworks.NET\SteamManager.cs" />
+    <Compile Include="Assets\Scripts\Tank.cs" />
     <Compile Include="Assets\Scripts\Trampoline.cs" />
-    <Compile Include="Assets\Tank.cs" />
     <None Include="Assets\Resources\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Resources\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Resources\Plugins\Steamworks.NET\redist\steam_appid.txt" />

@@ -22,7 +22,7 @@ public class StageSelectController : MonoBehaviour
 
         //PlayerPrefs.DeleteKey("PlayerProgress"); // apaga o progresso
         
-        SetButtonPreSelected("Button");
+        SetButtonPreSelected("ButtonIntro");
     }
 
     void GetPlayerProgress()
@@ -83,7 +83,7 @@ public class StageSelectController : MonoBehaviour
         panelPageOne.SetActive(true);
         panelPageTwo.SetActive(false);
 
-        SetButtonPreSelected("Button");
+        SetButtonPreSelected("ButtonIntro");
 
     }
 
