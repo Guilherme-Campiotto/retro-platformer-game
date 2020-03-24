@@ -6,7 +6,6 @@ public class RespawnObject : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject indicator1;
-    public GameObject indicator2;
     public GameObject indicator3;
     public GameController gameController;
     private float inicialPositionX;
@@ -35,11 +34,11 @@ public class RespawnObject : MonoBehaviour
 
     void RespawnIndicators(float time)
     {
-        if(indicator1 != null && indicator2 != null && indicator3 != null)
+        if(indicator1 != null && indicator3 != null)
         {
-            StartCoroutine(RespawnIndicator(time * 0.6f, indicator1, 0.1f));
-            StartCoroutine(RespawnIndicator(time * 0.7f, indicator3, - 0.1f));
-            StartCoroutine(RespawnIndicator(time * 0.8f, indicator2, 0.1f));
+            StartCoroutine(RespawnIndicator(time * 0.7f, indicator1, 0.1f));
+            StartCoroutine(RespawnIndicator(time * 0.8f, indicator3, - 0.1f));
+            //StartCoroutine(RespawnIndicator(time * 0.8f, indicator2, 0.1f));
         }
     }
 

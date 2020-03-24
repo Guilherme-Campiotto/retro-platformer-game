@@ -182,7 +182,7 @@ MonoBehaviour:
   m_isDefaultMaterial: 0
   m_padding: 1.25
   m_canvasRenderer: {fileID: 176902228}
-  m_TextComponent: {fileID: 990484785}
+  m_TextComponent: {fileID: 0}
   m_materialReferenceIndex: 1
 --- !u!222 &176902228
 CanvasRenderer:
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_isDefaultMaterial: 0
   m_padding: 1.25
   m_canvasRenderer: {fileID: 393409866}
-  m_TextComponent: {fileID: 990484785}
+  m_TextComponent: {fileID: 0}
   m_materialReferenceIndex: 1
 --- !u!222 &393409866
 CanvasRenderer:
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_isDefaultMaterial: 0
   m_padding: 1.25
   m_canvasRenderer: {fileID: 404589766}
-  m_TextComponent: {fileID: 990484785}
+  m_TextComponent: {fileID: 0}
   m_materialReferenceIndex: 1
 --- !u!222 &404589766
 CanvasRenderer:
@@ -1172,10 +1172,61 @@ PrefabInstance:
       propertyPath: keyboardImageTutorial
       value: 
       objectReference: {fileID: 1293640324}
+    - target: {fileID: 915179221, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 194
+      objectReference: {fileID: 0}
     - target: {fileID: 230556702910174520, guid: 2e9da4e1fe9d5974184d99df37637e29,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 729542405, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e7997beef56c26429d42abcc9501966,
+        type: 3}
+    - target: {fileID: 915179218, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038326864, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -268
+      objectReference: {fileID: 0}
+    - target: {fileID: 713286745, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -267.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091160843, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a8fcc1b6c30f714b8f361e5819a3c00,
+        type: 3}
+    - target: {fileID: 1844572173, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70411eec54899ea4aa909eebc3796190,
+        type: 3}
+    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_text
+      value: JUMP TWICE TO DO A DOUBLE JUMP!
+      objectReference: {fileID: 0}
+    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 416730005, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
       propertyPath: m_Sprite
@@ -1318,57 +1369,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2995842997840756151, guid: 8c9a463fda9244a488eeb464c1b119d7,
         type: 3}
-    - target: {fileID: 915179218, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 915179221, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 194
-      objectReference: {fileID: 0}
-    - target: {fileID: 1091160843, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7a8fcc1b6c30f714b8f361e5819a3c00,
-        type: 3}
-    - target: {fileID: 1038326864, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -268
-      objectReference: {fileID: 0}
-    - target: {fileID: 713286745, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -267.99997
-      objectReference: {fileID: 0}
-    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_text
+    - target: {fileID: 1563837835, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Text
       value: JUMP TWICE TO DO A DOUBLE JUMP!
       objectReference: {fileID: 0}
-    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_textInfo.materialCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 729542405, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2e7997beef56c26429d42abcc9501966,
-        type: 3}
-    - target: {fileID: 1844572173, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 70411eec54899ea4aa909eebc3796190,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
 --- !u!224 &990484784 stripped
@@ -1377,18 +1381,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 990484782}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &990484785 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29,
-    type: 3}
-  m_PrefabInstance: {fileID: 990484782}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1057646318
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,6 +2244,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4968219357995338627, guid: 84d38e06f7696bd4fbe267565fe1afdf,
+        type: 3}
+      propertyPath: menuOptions
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4968219357995338622, guid: 84d38e06f7696bd4fbe267565fe1afdf,
         type: 3}
       propertyPath: m_Material
@@ -2271,11 +2268,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 1.3588519
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968219357995338627, guid: 84d38e06f7696bd4fbe267565fe1afdf,
-        type: 3}
-      propertyPath: menuOptions
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d38e06f7696bd4fbe267565fe1afdf, type: 3}
