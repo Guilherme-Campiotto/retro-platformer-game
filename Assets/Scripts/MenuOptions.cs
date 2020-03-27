@@ -173,7 +173,7 @@ public class MenuOptions : MonoBehaviour
     {
         settingsPanel.SetActive(true);
 
-        SetButtonPreSelected("Dropdown");
+        SetButtonPreSelected("ButtonSound");
     }
 
     public void OpenControlsPanel()
