@@ -300,9 +300,10 @@ public class CharacterController2D : MonoBehaviour
     {
         PlayerPrefs.SetInt("jumpCount", jumpCount);
 
+        // Conquista pular 100 vezes
         if(jumpCount == 100 && scriptAchievments != null)
         {
-            scriptAchievments.UnlockSteamAchievement("achiev10");
+            scriptAchievments.UnlockSteamAchievement("1/9");
         }
     }
 
@@ -313,9 +314,10 @@ public class CharacterController2D : MonoBehaviour
     {
         PlayerPrefs.SetInt("deathCount", deathCount);
 
+        // Conquista morrer 20 vezes
         if(deathCount == 20 && scriptAchievments != null)
         {
-            scriptAchievments.UnlockSteamAchievement("achiev8");
+            scriptAchievments.UnlockSteamAchievement("1/7");
         }
     }
 

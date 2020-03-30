@@ -27,6 +27,8 @@ public class GameController : MonoBehaviour
     private GameObject steamAchievements;
     SteamAchievements scriptAchievments;
 
+    private int achievmentsCount;
+
     public void Start()
     {
 
@@ -56,6 +58,9 @@ public class GameController : MonoBehaviour
 
         Time.timeScale = 1f;
 
+        // Verificar depois nos testes como pegar essa informação na steam
+        achievmentsCount = PlayerPrefs.GetInt("achievmentsCount");
+
     }
 
     public IEnumerator RestartGame()
@@ -71,19 +76,22 @@ public class GameController : MonoBehaviour
 
         if (nextScene == SceneManager.sceneCountInBuildSettings)
         {
+            // Conquista zerar o jogo
             if(scriptAchievments != null)
             {
-                scriptAchievments.UnlockSteamAchievement("achiev6");
+                scriptAchievments.UnlockSteamAchievement("1/6");
             }
 
+            // Conquista ultima fase sem morrer
             if(player.GetComponent<CharacterController2D>().deathCountStage == 0 && scriptAchievments != null)
             {
-                scriptAchievments.UnlockSteamAchievement("achiev9");
+                scriptAchievments.UnlockSteamAchievement("1/8");
             }
 
+            // Conquista passar fase 1-4 em menos de 10 segundos
             if(SceneManager.GetActiveScene().buildIndex == 8 && player.GetComponent<CharacterController2D>().stageTime <= 10f && scriptAchievments != null)
             {
-                scriptAchievments.UnlockSteamAchievement("achiev7");
+                scriptAchievments.UnlockSteamAchievement("1/11");
             }
 
             endGamePanel.SetActive(true);
@@ -209,20 +217,25 @@ public class GameController : MonoBehaviour
         {
             switch (nextScene)
             {
-                case 10:
-                    scriptAchievments.UnlockSteamAchievement("achiev1");
-                    break;
-                case 15:
-                    scriptAchievments.UnlockSteamAchievement("achiev2");
+                case 13:
+                    // Conquista passar todas as fases do mundo 1
+                    scriptAchievments.UnlockSteamAchievement("1/0");
                     break;
                 case 20:
-                    scriptAchievments.UnlockSteamAchievement("achiev3");
+                    // Conquista passar todas as fases do mundo 2
+                    scriptAchievments.UnlockSteamAchievement("1/1");
                     break;
-                case 25:
-                    scriptAchievments.UnlockSteamAchievement("achiev4");
+                case 27:
+                    // Conquista passar todas as fases do mundo 3
+                    scriptAchievments.UnlockSteamAchievement("1/2");
                     break;
-                case 30:
-                    scriptAchievments.UnlockSteamAchievement("achiev5");
+                case 34:
+                    // Conquista passar todas as fases do mundo 4
+                    scriptAchievments.UnlockSteamAchievement("1/3");
+                    break;
+                case 41:
+                    // Conquista passar todas as fases do mundo 5
+                    scriptAchievments.UnlockSteamAchievement("1/4");
                     break;
             }
         }
