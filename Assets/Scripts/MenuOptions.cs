@@ -10,6 +10,7 @@ public class MenuOptions : MonoBehaviour
     public static string soundConfig;
     public GameObject settingsPanel;
     public SoundController soundController;
+    public GameController gameController;
 
     public GameObject controlsPanel;
     public GameObject instructionsPanel;
@@ -397,5 +398,13 @@ public class MenuOptions : MonoBehaviour
             soundConfigButton.GetComponent<Image>().sprite = soundOnSprite;
         }
         PlayerPrefs.SetString("Sound", soundConfig);
+    }
+
+    public void GoToNextLevel()
+    {
+        if(gameController)
+        {
+            gameController.nextLevel();
+        }
     }
 }

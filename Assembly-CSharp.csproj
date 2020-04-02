@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Intro.cs" />
     <Compile Include="Assets\Resources\Plugins\Steamworks.NET\autogen\isteamapplist.cs" />
     <Compile Include="Assets\Resources\Plugins\Steamworks.NET\autogen\isteamapps.cs" />
     <Compile Include="Assets\Resources\Plugins\Steamworks.NET\autogen\isteamclient.cs" />
