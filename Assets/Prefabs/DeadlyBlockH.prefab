@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7726619713919141539}
   - component: {fileID: 1117783227}
   - component: {fileID: 1861872286}
+  - component: {fileID: 51144690963263124}
   m_Layer: 0
   m_Name: DeadlyBlockH
   m_TagString: Hazard
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7123945006274931737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -193,3 +194,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!68 &51144690963263124
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123945006274931737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.786511, y: 0.7469969}
+  - {x: -2.0810921, y: -0.021384506}
+  - {x: -0.84072506, y: -0.678638}
+  - {x: -0.03759715, y: -2.0587988}
+  - {x: 0.7508684, y: -0.7815477}
+  - {x: 2.132394, y: 0.000284105}
+  - {x: 0.74244636, y: 0.8107321}
+  - {x: 0.013724799, y: 2.210377}
+  - {x: -0.77624446, y: 0.83809423}
