@@ -57,11 +57,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /**
-     * O personagem só desliza se estiver encontando na parede e o direcional pressionado no sentido que ele esta.
+     * O personagem só desliza se estiver em contato com a parede e caindo.
      */
     private void CheckWallSlide()
     {
-        if (controller.wallCheckHit && controller.m_Rigidbody2D.velocity.y <= 0 && !controller.m_Grounded && horizontalMove != 0f)
+        if (controller.wallCheckHit && controller.m_Rigidbody2D.velocity.y <= 0 && !controller.m_Grounded)
         {
             controller.canDoubleJump = true;
             wallSliding = true;
