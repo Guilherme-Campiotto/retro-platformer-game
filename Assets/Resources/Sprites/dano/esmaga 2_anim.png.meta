@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 86ff151e4c879c64cb639af3f4bc8520
+guid: 304797b7df6dc15459490f861a177e67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7586286506932514003
-    second: esmaga 2_anim_0
+      213: 4188800091245052283
+    second: esmaga 2_anim 1_0
   - first:
-      213: -2258390926059235353
-    second: esmaga 2_anim_1
+      213: -759413754456752091
+    second: esmaga 2_anim 1_1
   - first:
-      213: 6786596232331956023
-    second: esmaga 2_anim_2
+      213: 5624354665521611580
+    second: esmaga 2_anim 1_2
   - first:
-      213: -4269181539041744895
-    second: esmaga 2_anim_3
+      213: 5172555401659170922
+    second: esmaga 2_anim 1_3
   - first:
-      213: 2126260099329364470
-    second: esmaga 2_anim_4
+      213: -4474737202197986174
+    second: esmaga 2_anim 1_4
   - first:
-      213: 4765963795723051327
-    second: esmaga 2_anim_5
+      213: 7141319315722837069
+    second: esmaga 2_anim 1_5
   - first:
-      213: 5890705761274925781
-    second: esmaga 2_anim_6
+      213: -5861007989642499022
+    second: esmaga 2_anim 1_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -103,40 +103,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: esmaga 2_anim_0
+      name: esmaga 2_anim 1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 69
         y: 0
-        width: 425
+        width: 430
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +121,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10645617f6914f34aaf25851dffbd79b
-      internalID: -7586286506932514003
+      spriteID: 9d925831f51ac984b97317f62694cd80
+      internalID: 4188800091245052283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 2_anim_1
+      name: esmaga 2_anim 1_1
       rect:
         serializedVersion: 2
-        x: 425
+        x: 635
         y: 0
-        width: 425
+        width: 430
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +142,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b45e68e196ae1844aa8089b951da117
-      internalID: -2258390926059235353
+      spriteID: cc1bf11b32061df44adb1bb22dc989b2
+      internalID: -759413754456752091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 2_anim_2
+      name: esmaga 2_anim 1_2
       rect:
         serializedVersion: 2
-        x: 850
+        x: 1203
         y: 0
-        width: 425
+        width: 430
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +163,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81eeaf47d4f78e74299ad03c6b611705
-      internalID: 6786596232331956023
+      spriteID: 42d98dcfb83bd884f875e6baa9098f71
+      internalID: 5624354665521611580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 2_anim_3
+      name: esmaga 2_anim 1_3
       rect:
         serializedVersion: 2
-        x: 1275
+        x: 1768
         y: 0
-        width: 425
+        width: 431
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,19 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f6f7198656f3524f9a5378f8c0829ab
-      internalID: -4269181539041744895
+      spriteID: a2ba0cb8f5852f44cb59af25dec918ac
+      internalID: 5172555401659170922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 2_anim_4
+      name: esmaga 2_anim 1_4
       rect:
         serializedVersion: 2
-        x: 1700
+        x: 2336
         y: 0
-        width: 425
+        width: 430
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,19 +205,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1660f59c0ae7a6e4fbc491f563a98f6c
-      internalID: 2126260099329364470
+      spriteID: c37568dea06b3ad4bb2de054f8cd9caf
+      internalID: -4474737202197986174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 2_anim_5
+      name: esmaga 2_anim 1_5
       rect:
         serializedVersion: 2
-        x: 2125
+        x: 2902
         y: 0
-        width: 425
+        width: 431
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,19 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33083a9c8fa7a154b87a2681fe73481a
-      internalID: 4765963795723051327
+      spriteID: 62dc34e31f40a884894e2af289516625
+      internalID: 7141319315722837069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 2_anim_6
+      name: esmaga 2_anim 1_6
       rect:
         serializedVersion: 2
-        x: 2550
+        x: 3470
         y: 0
-        width: 425
+        width: 430
         height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7aa2f2b3744d5a4cbbf5f104939840c
-      internalID: 5890705761274925781
+      spriteID: 356237c05e53cae4286a7bae8584e82f
+      internalID: -5861007989642499022
       vertices: []
       indices: 
       edges: []

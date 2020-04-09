@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: ca525064fc0a89f4d8c2988264823ca6
+guid: 651dda43fae38584196f6240af0a016f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1846900915211187406
-    second: esmaga 3_anim 1_0
+      213: -1646554150077337041
+    second: esmaga 3_V2_anim_0
   - first:
-      213: 6153614751551293950
-    second: esmaga 3_anim 1_1
+      213: 2952886797429820354
+    second: esmaga 3_V2_anim_1
   - first:
-      213: -3939682398857618656
-    second: esmaga 3_anim 1_2
+      213: -497320768367769883
+    second: esmaga 3_V2_anim_2
   - first:
-      213: 2244064855907624924
-    second: esmaga 3_anim 1_3
+      213: 4052166775034051963
+    second: esmaga 3_V2_anim_3
   - first:
-      213: 6166963247299753901
-    second: esmaga 3_anim 1_4
+      213: -848503452758232006
+    second: esmaga 3_V2_anim_4
   - first:
-      213: 2815209282599941985
-    second: esmaga 3_anim 1_5
+      213: 678500649568984147
+    second: esmaga 3_V2_anim_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: esmaga 3_anim 1_0
+      name: esmaga 3_V2_anim_0
       rect:
         serializedVersion: 2
         x: 47
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b282c614b5859d745a8ad81ce9bd5d00
-      internalID: -1846900915211187406
+      spriteID: 0d4c722101520cf4b9f617cc879d21d7
+      internalID: -1646554150077337041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_1
+      name: esmaga 3_V2_anim_1
       rect:
         serializedVersion: 2
         x: 614
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c99f108c9957b5143b3b6bca81172ebb
-      internalID: 6153614751551293950
+      spriteID: ee638ac36f11db243a96cecfd395d24a
+      internalID: 2952886797429820354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_2
+      name: esmaga 3_V2_anim_2
       rect:
         serializedVersion: 2
         x: 1181
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9109f97a11a69c4a986657d3d7375a6
-      internalID: -3939682398857618656
+      spriteID: 4bfcad3180be3444e8735b1b3237fd92
+      internalID: -497320768367769883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_3
+      name: esmaga 3_V2_anim_3
       rect:
         serializedVersion: 2
         x: 1748
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f09929780f0f2224b8e9744ce26006df
-      internalID: 2244064855907624924
+      spriteID: 7fa0fb37d68893c4f9715d6638b38d0a
+      internalID: 4052166775034051963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_4
+      name: esmaga 3_V2_anim_4
       rect:
         serializedVersion: 2
         x: 2315
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f3d464ad02cd1f49a9b81beb34b71a9
-      internalID: 6166963247299753901
+      spriteID: e6d415fc545fea84dbc2bd40ca52ef87
+      internalID: -848503452758232006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_5
+      name: esmaga 3_V2_anim_5
       rect:
         serializedVersion: 2
         x: 2882
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88e7a4bd02a33094c889725b463a5f93
-      internalID: 2815209282599941985
+      spriteID: 14dfcf83b9ef2ae4f9c570077e131418
+      internalID: 678500649568984147
       vertices: []
       indices: 
       edges: []

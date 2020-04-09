@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: ca525064fc0a89f4d8c2988264823ca6
+guid: c6ee5d4093717554ba1bc0847ceb9e94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1846900915211187406
-    second: esmaga 3_anim 1_0
+      213: 5538197854978461701
+    second: esmaga 2_V2_anim_0
   - first:
-      213: 6153614751551293950
-    second: esmaga 3_anim 1_1
+      213: -3200403016362041883
+    second: esmaga 2_V2_anim_1
   - first:
-      213: -3939682398857618656
-    second: esmaga 3_anim 1_2
+      213: 4117939966884338469
+    second: esmaga 2_V2_anim_2
   - first:
-      213: 2244064855907624924
-    second: esmaga 3_anim 1_3
+      213: -7731759730239944874
+    second: esmaga 2_V2_anim_3
   - first:
-      213: 6166963247299753901
-    second: esmaga 3_anim 1_4
+      213: -3768211964562936964
+    second: esmaga 2_V2_anim_4
   - first:
-      213: 2815209282599941985
-    second: esmaga 3_anim 1_5
+      213: 3628148166379591345
+    second: esmaga 2_V2_anim_5
+  - first:
+      213: -532711231084408960
+    second: esmaga 2_V2_anim_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: esmaga 3_anim 1_0
+      name: esmaga 2_V2_anim_0
       rect:
         serializedVersion: 2
-        x: 47
+        x: 69
         y: 0
-        width: 472
-        height: 283
+        width: 430
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b282c614b5859d745a8ad81ce9bd5d00
-      internalID: -1846900915211187406
+      spriteID: a913827dc9813ab499f82d2af3467770
+      internalID: 5538197854978461701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_1
+      name: esmaga 2_V2_anim_1
       rect:
         serializedVersion: 2
-        x: 614
+        x: 635
         y: 0
-        width: 473
-        height: 283
+        width: 430
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c99f108c9957b5143b3b6bca81172ebb
-      internalID: 6153614751551293950
+      spriteID: 1f77aa54faaac00458f6a635f030539d
+      internalID: -3200403016362041883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_2
+      name: esmaga 2_V2_anim_2
       rect:
         serializedVersion: 2
-        x: 1181
+        x: 1203
         y: 0
-        width: 473
-        height: 283
+        width: 430
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9109f97a11a69c4a986657d3d7375a6
-      internalID: -3939682398857618656
+      spriteID: bc0399c7329ff1b4084d68121cc6bb63
+      internalID: 4117939966884338469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_3
+      name: esmaga 2_V2_anim_3
       rect:
         serializedVersion: 2
-        x: 1748
+        x: 1768
         y: 0
-        width: 472
-        height: 283
+        width: 431
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f09929780f0f2224b8e9744ce26006df
-      internalID: 2244064855907624924
+      spriteID: 9105af36ca223484c8358d54da011c8f
+      internalID: -7731759730239944874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_4
+      name: esmaga 2_V2_anim_4
       rect:
         serializedVersion: 2
-        x: 2315
+        x: 2336
         y: 0
-        width: 472
-        height: 283
+        width: 430
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f3d464ad02cd1f49a9b81beb34b71a9
-      internalID: 6166963247299753901
+      spriteID: 43a3fb9e117dbd749a4c4ab79216871f
+      internalID: -3768211964562936964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: esmaga 3_anim 1_5
+      name: esmaga 2_V2_anim_5
       rect:
         serializedVersion: 2
-        x: 2882
+        x: 2902
         y: 0
-        width: 473
-        height: 283
+        width: 431
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +226,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88e7a4bd02a33094c889725b463a5f93
-      internalID: 2815209282599941985
+      spriteID: d8cca839667235d4fac042b677cac25e
+      internalID: 3628148166379591345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esmaga 2_V2_anim_6
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 0
+        width: 430
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7a60b8df05d4749b8222486ec3a500
+      internalID: -532711231084408960
       vertices: []
       indices: 
       edges: []
