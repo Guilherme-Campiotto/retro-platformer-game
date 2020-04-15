@@ -24,12 +24,14 @@ public class GravityController : MonoBehaviour
             soundController.PlayAudioOnce(gravitySound);
             gravityLevel = Mathf.Abs(gravityLevel);
             player.InvertGravityControls();
+            player.canDoubleJump = true;
         }
         else if(!gravityInverted && Physics2D.gravity.y > 0)
         {
             soundController.PlayAudioOnce(gravitySound);
             gravityLevel = -Mathf.Abs(gravityLevel);
             player.InvertGravityControls();
+            player.canDoubleJump = true;
         }
 
         Physics2D.gravity = new Vector2(Physics2D.gravity.x, gravityLevel);

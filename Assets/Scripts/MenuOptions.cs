@@ -52,8 +52,9 @@ public class MenuOptions : MonoBehaviour
         }
 
         SetButtonPreSelected("ButtonPlay");
-        
-        if(windowScreenToggle != null)
+        SetButtonPreSelected("ButtonSkip");
+
+        if (windowScreenToggle != null)
         {
             windowScreenToggle.isOn = Screen.fullScreen;
         }

@@ -910,17 +910,17 @@ PrefabInstance:
     - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.6635399
+      value: -0.026169881
       objectReference: {fileID: 0}
     - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.7933617
+      value: 0.6194489
       objectReference: {fileID: 0}
     - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.6239097
+      value: 0.38497698
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2024536cf9992304db4f038a1bfa4e5b, type: 3}
@@ -1457,17 +1457,22 @@ PrefabInstance:
     - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.7090466
+      value: -0.07015687
       objectReference: {fileID: 0}
     - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.7023482
+      value: 0.6824701
       objectReference: {fileID: 0}
     - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.6239097
+      value: 0.41264918
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832527738722022354, guid: 2024536cf9992304db4f038a1bfa4e5b,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.002686724
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2024536cf9992304db4f038a1bfa4e5b, type: 3}
@@ -1650,14 +1655,14 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 1057646319}
+    - target: {fileID: 1092870571, guid: 84d38e06f7696bd4fbe267565fe1afdf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2006778254304280970, guid: 84d38e06f7696bd4fbe267565fe1afdf,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1092870571, guid: 84d38e06f7696bd4fbe267565fe1afdf, type: 3}
-      propertyPath: m_Intensity
-      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d38e06f7696bd4fbe267565fe1afdf, type: 3}
