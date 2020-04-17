@@ -29,9 +29,9 @@ public class SoundController : MonoBehaviour
         }
     }
 
-    public void PlayAudioOnce(AudioClip clip)
+    public void PlayAudioOnce(AudioClip clip, float volume = 1f)
     {
-        audioSource.PlayOneShot(clip);
+        audioSource.PlayOneShot(clip, volume);
     }
 
     public void MuteAudio()

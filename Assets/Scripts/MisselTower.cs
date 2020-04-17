@@ -34,7 +34,7 @@ public class MisselTower : MonoBehaviour
     {
         if (!player.GetComponent<CharacterController2D>().dead)
         {
-            soundController.PlayAudioOnce(missileLaunchSound);
+            soundController.PlayAudioOnce(missileLaunchSound, 0.3f);
             Instantiate(prefabMissel, new Vector2(missilePoint.position.x, missilePoint.position.y), transform.rotation);
         }
     }

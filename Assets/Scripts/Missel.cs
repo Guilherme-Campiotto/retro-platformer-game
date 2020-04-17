@@ -33,7 +33,7 @@ public class Missel : MonoBehaviour
         exploded = true;
         //this.GetComponent<Rigidbody2D>().simulated = false;
         StartCoroutine(DestroyObjectWithDelay(gameObject));
-        soundController.PlayAudioOnce(missileExplosionSound);
+        soundController.PlayAudioOnce(missileExplosionSound, 0.3f);
     }
 
     IEnumerator DestroyObjectWithDelay(GameObject gameObject)
