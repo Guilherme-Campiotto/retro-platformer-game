@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582847778}
   - component: {fileID: 1582847779}
+  - component: {fileID: 682158120}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -80,6 +81,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &682158120
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582847777}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a1127c55b4342a45b4241cd015286f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4916972863555874080
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +226,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   missileExplosionSound: {fileID: 8300000, guid: 841855b697b98f44b94a29e7a122dad6,
     type: 3}
+  animator: {fileID: 682158120}
 --- !u!50 &774819268979518159
 Rigidbody2D:
   serializedVersion: 4

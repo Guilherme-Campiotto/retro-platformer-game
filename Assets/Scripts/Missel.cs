@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Missel : MonoBehaviour
@@ -8,6 +7,9 @@ public class Missel : MonoBehaviour
     public Vector2 direction;
     private SoundController soundController;
     public AudioClip missileExplosionSound;
+    public bool exploded = false;
+
+    public Animator animator;
 
     private void Start()
     {
@@ -17,12 +19,27 @@ public class Missel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position += gameObject.transform.right * speed * Time.deltaTime;
+        if (!exploded)
+        {
+            gameObject.transform.position += gameObject.transform.right * speed * Time.deltaTime;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        animator.Play("MissileExplosion");
+
+        //Destroy(gameObject);
+        exploded = true;
+        //this.GetComponent<Rigidbody2D>().simulated = false;
+        StartCoroutine(DestroyObjectWithDelay(gameObject));
         soundController.PlayAudioOnce(missileExplosionSound);
     }
+
+    IEnumerator DestroyObjectWithDelay(GameObject gameObject)
+    {
+        yield return new WaitForSeconds(.5f);
+        Destroy(gameObject);
+    }
+
 }

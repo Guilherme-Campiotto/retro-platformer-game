@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8076661839946122209}
   - component: {fileID: 8076661839946122222}
+  - component: {fileID: 8076661840226278620}
   m_Layer: 0
   m_Name: Point Light 2D (3)
   m_TagString: Untagged
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -70,6 +71,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &8076661840226278620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8076661839946122208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1030dd4b87dd6a54fa10a308360dc88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnitude: 10
+  frequency: 1
 --- !u!1 &8487718730101000436
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +135,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
