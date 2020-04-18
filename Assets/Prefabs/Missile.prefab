@@ -129,7 +129,7 @@ Transform:
   m_GameObject: {fileID: 4916972863555874080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.08, y: -0.72, z: 0}
-  m_LocalScale: {x: 0.122765906, y: 0.122765906, z: 0.122765906}
+  m_LocalScale: {x: 0.09084677, y: 0.09084677, z: 0.09084677}
   m_Children:
   - {fileID: 1582847778}
   m_Father: {fileID: 0}
@@ -226,6 +226,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   missileExplosionSound: {fileID: 8300000, guid: 841855b697b98f44b94a29e7a122dad6,
     type: 3}
+  exploded: 0
   animator: {fileID: 682158120}
 --- !u!50 &774819268979518159
 Rigidbody2D:

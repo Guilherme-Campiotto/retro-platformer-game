@@ -125,8 +125,9 @@ public class PlayerMovement : MonoBehaviour
         if(GetComponent<Rigidbody2D>().velocity.y == 0)
         {
             animator.SetBool("isFalling", false);
-        } else
+        } else if(GetComponent<Rigidbody2D>().velocity.y > 0)
         {
+            Debug.Log("true");
             animator.SetBool("isFalling", true);
         }
 
