@@ -1113,6 +1113,10 @@ PrefabInstance:
       propertyPath: firstShootTime
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1280703267, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 797100267}
     - target: {fileID: 658532207, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.1
@@ -1126,6 +1130,12 @@ PrefabInstance:
 --- !u!4 &797100266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 820638353784530185, guid: 2969897629e5a804d89b72f1a2be8700,
+    type: 3}
+  m_PrefabInstance: {fileID: 797100265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &797100267 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2963687611050431252, guid: 2969897629e5a804d89b72f1a2be8700,
     type: 3}
   m_PrefabInstance: {fileID: 797100265}
   m_PrefabAsset: {fileID: 0}

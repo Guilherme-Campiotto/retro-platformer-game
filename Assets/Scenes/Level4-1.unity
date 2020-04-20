@@ -885,8 +885,18 @@ PrefabInstance:
       propertyPath: firstShootTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1280703267, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1176792036}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+--- !u!95 &1176792036 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2963687611050431252, guid: 2969897629e5a804d89b72f1a2be8700,
+    type: 3}
+  m_PrefabInstance: {fileID: 1176792034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1239899868
 PrefabInstance:
   m_ObjectHideFlags: 0

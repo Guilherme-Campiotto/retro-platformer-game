@@ -460,6 +460,7 @@ GameObject:
   - component: {fileID: 277080193}
   - component: {fileID: 277080195}
   - component: {fileID: 277080194}
+  - component: {fileID: 277080196}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -499,6 +500,7 @@ MonoBehaviour:
   shootInterval: 5
   firstShootTime: 2
   missilePoint: {fileID: 116738680}
+  animator: {fileID: 277080196}
   missileLaunchSound: {fileID: 8300000, guid: 401ab34d6f54c944783c330438212e72, type: 3}
 --- !u!212 &277080195
 SpriteRenderer:
@@ -549,6 +551,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &277080196
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277080192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02e9a85025d6ec040865c85a45f0efe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &418598863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1832,14 +1853,11 @@ PrefabInstance:
       propertyPath: firstShootTime
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1553250127, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553250127, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4968219357995338621}
     - target: {fileID: 658532207, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.3
@@ -1880,6 +1898,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 1.7
       objectReference: {fileID: 0}
+    - target: {fileID: 1553250127, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553250127, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 658532208, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1892,11 +1918,6 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4968219357995338621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
 --- !u!4 &1676642416 stripped
@@ -2189,6 +2210,11 @@ PrefabInstance:
       propertyPath: firstShootTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4968219357995338621}
     - target: {fileID: 658532206, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2225,11 +2251,6 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4968219357995338621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
 --- !u!4 &1809957898 stripped
@@ -2249,6 +2270,7 @@ GameObject:
   - component: {fileID: 1837041076}
   - component: {fileID: 1837041078}
   - component: {fileID: 1837041077}
+  - component: {fileID: 1837041079}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -2288,6 +2310,7 @@ MonoBehaviour:
   shootInterval: 5
   firstShootTime: 3
   missilePoint: {fileID: 1969993412}
+  animator: {fileID: 1837041079}
   missileLaunchSound: {fileID: 8300000, guid: 401ab34d6f54c944783c330438212e72, type: 3}
 --- !u!212 &1837041078
 SpriteRenderer:
@@ -2338,6 +2361,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1837041079
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837041075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02e9a85025d6ec040865c85a45f0efe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1838170984
 PrefabInstance:
   m_ObjectHideFlags: 0

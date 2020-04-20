@@ -1,34 +1,28 @@
 fileFormatVersion: 2
-guid: e4f710c723a922b469268c2d49579032
+guid: 3e1867079f778bb4ca85e7d4035e9dc3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9016030771280711227
-    second: bola de fogo sprite sheet_0
+      213: 2497427927823307793
+    second: bola de fogo em arco_0
   - first:
-      213: 7614607350606276391
-    second: bola de fogo sprite sheet_1
+      213: -6400709483251139468
+    second: bola de fogo em arco_1
   - first:
-      213: -787571394924624489
-    second: bola de fogo sprite sheet_2
+      213: -4322434091283963346
+    second: bola de fogo em arco_2
   - first:
-      213: -8822441256215601323
-    second: bola de fogo sprite sheet_3
+      213: -4840990270569648320
+    second: bola de fogo em arco_3
   - first:
-      213: -3681266379940137496
-    second: bola de fogo sprite sheet_4
+      213: -4866614214485035253
+    second: bola de fogo em arco_4
   - first:
-      213: 6500169201757500388
-    second: bola de fogo sprite sheet_5
+      213: 637924892373944673
+    second: bola de fogo em arco_5
   - first:
-      213: 1473491594728402904
-    second: bola de fogo sprite sheet_6
-  - first:
-      213: 1240745226239311805
-    second: bola de fogo sprite sheet_7
-  - first:
-      213: 3426283683129428028
-    second: bola de fogo sprite sheet_8
+      213: 6375146100620704720
+    second: bola de fogo em arco_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -109,218 +103,152 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_0
+      name: bola de fogo em arco_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 247
-        width: 391
-        height: 119
+        y: 0
+        width: 261
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c743a9e23b821fb4cb5467e33c1e4d42
-      internalID: -9016030771280711227
+      spriteID: 659018393825de844b87f85363b45baa
+      internalID: 2497427927823307793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_1
+      name: bola de fogo em arco_1
       rect:
         serializedVersion: 2
-        x: 391
-        y: 247
-        width: 391
-        height: 119
+        x: 293
+        y: 0
+        width: 261
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b29f25ee74ef605478c419d521468318
-      internalID: 7614607350606276391
+      spriteID: 92fe1dd9e546f46478dd5bf20256fce7
+      internalID: -6400709483251139468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_2
+      name: bola de fogo em arco_2
       rect:
         serializedVersion: 2
-        x: 781
-        y: 247
-        width: 391
-        height: 119
+        x: 585
+        y: 0
+        width: 260
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed5b15a767e3e24589eec9b5f8be29d
-      internalID: -787571394924624489
+      spriteID: eb7f402d56375294a8672cf8d0e52bd0
+      internalID: -4322434091283963346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_3
+      name: bola de fogo em arco_3
       rect:
         serializedVersion: 2
-        x: 1173
-        y: 247
-        width: 408
-        height: 119
+        x: 866
+        y: 0
+        width: 260
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e201f6c6b11b71340bd5aef2198780dc
-      internalID: -8822441256215601323
+      spriteID: d23aa253e1c45ab499deecd746680a94
+      internalID: -4840990270569648320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_4
+      name: bola de fogo em arco_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 391
-        height: 119
+        x: 1149
+        y: 0
+        width: 261
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dcc121c86bded94ab8ccb24c2dc8b5e
-      internalID: -3681266379940137496
+      spriteID: 7f3d2bb11c8307d4ba7f58deb03c99b0
+      internalID: -4866614214485035253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_5
+      name: bola de fogo em arco_5
       rect:
         serializedVersion: 2
-        x: 391
-        y: 129
-        width: 391
-        height: 119
+        x: 1433
+        y: 0
+        width: 260
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d58b61632172142bdcbaeed698a2c4
-      internalID: 6500169201757500388
+      spriteID: b2b519f1aa5f526429321581ed1a080e
+      internalID: 637924892373944673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo sprite sheet_6
+      name: bola de fogo em arco_6
       rect:
         serializedVersion: 2
-        x: 782
-        y: 128
-        width: 400
-        height: 119
+        x: 1716
+        y: 0
+        width: 261
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 661072db6fb9c5240b7b8ee04a11b767
-      internalID: 1473491594728402904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bola de fogo sprite sheet_7
-      rect:
-        serializedVersion: 2
-        x: 1183
-        y: 128
-        width: 407
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90e9f48dd73db834aa2fa5ad71c78cad
-      internalID: 1240745226239311805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bola de fogo sprite sheet_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 9
-        width: 391
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 163c821b90827854d9d922693623d199
-      internalID: 3426283683129428028
+      spriteID: 820b923d128f10849adcc75f5ca27fae
+      internalID: 6375146100620704720
       vertices: []
       indices: 
       edges: []

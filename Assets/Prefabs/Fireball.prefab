@@ -66,16 +66,18 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 1.02
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -1.2290498, y: -0.004408724, z: 0}
-  - {x: -1.0892068, y: -0.2765329, z: 0}
-  - {x: -0.9417909, y: -0.57765824, z: 0}
-  - {x: -0.5044019, y: -0.6067511, z: 0}
-  - {x: 0.7042026, y: -1.1123071, z: 0}
-  - {x: 1.449233, y: -0.5189819, z: 0}
-  - {x: 1.3455858, y: 0.64592075, z: 0}
-  - {x: -0.2668056, y: 0.9957339, z: 0}
-  - {x: -0.56352216, y: 0.6964405, z: 0}
-  - {x: -0.9419223, y: 0.29710928, z: 0}
+  - {x: -1.3692157, y: -0.03241409, z: 0}
+  - {x: -1.1802617, y: -0.41620818, z: 0}
+  - {x: -0.7778968, y: -0.49170282, z: 0}
+  - {x: -0.3040847, y: -0.2521883, z: 0}
+  - {x: 0.12379179, y: -0.23989342, z: 0}
+  - {x: -0.05125574, y: -0.06559476, z: 0}
+  - {x: 0.18005583, y: 0.081381954, z: 0}
+  - {x: -0.056641497, y: 0.28061524, z: 0}
+  - {x: 0.1351641, y: 0.40721464, z: 0}
+  - {x: -0.35786262, y: 0.34033215, z: 0}
+  - {x: -0.67278737, y: 0.4708104, z: 0}
+  - {x: -1.1786646, y: 0.32934225, z: 0}
 --- !u!1 &819789671681851824
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +91,7 @@ GameObject:
   - component: {fileID: 819789671681851826}
   - component: {fileID: 819789671681851825}
   - component: {fileID: 542489926}
+  - component: {fileID: 6743822865837941873}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Hazard
@@ -105,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 819789671681851824}
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: -5.93, y: -5.68, z: 0}
-  m_LocalScale: {x: 0.28982884, y: 0.28982884, z: 0.28982884}
+  m_LocalScale: {x: 0.31971017, y: 0.43708292, z: 0.28982884}
   m_Children:
   - {fileID: 114525202}
   m_Father: {fileID: 0}
@@ -149,7 +152,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f9699893755cef74bb9b2d9cf19bac44, type: 3}
+  m_Sprite: {fileID: -7402772833993885721, guid: cbeeb06d8fd2698428ac3cc400242c08,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -207,16 +211,35 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3343668, y: -0.016712815}
+  m_Offset: {x: -0.5282359, y: 0.0010038763}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.81, y: 2.06}
+    oldSize: {x: 2.78, y: 0.94}
     newSize: {x: 2.28, y: 2.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0450554, y: 1.6421719}
+  m_Size: {x: 1.4430375, y: 0.82982886}
   m_EdgeRadius: 0
+--- !u!95 &6743822865837941873
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819789671681851824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf91d905b8d7edf4e81ddabb41fd349c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

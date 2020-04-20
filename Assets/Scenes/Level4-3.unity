@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1770,8 +1770,18 @@ PrefabInstance:
       propertyPath: firstShootTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1280703267, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1176792035}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+--- !u!95 &1176792035 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2963687611050431252, guid: 2969897629e5a804d89b72f1a2be8700,
+    type: 3}
+  m_PrefabInstance: {fileID: 1176792034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1222871909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3329835587142128485, guid: 11324ad56f6c1934e90ddbce4fb5ef0f,

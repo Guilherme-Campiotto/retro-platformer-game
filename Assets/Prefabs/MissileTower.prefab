@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 658532207}
   - component: {fileID: 658532208}
   - component: {fileID: 1280703267}
+  - component: {fileID: 2963687611050431252}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -129,7 +130,27 @@ MonoBehaviour:
   shootInterval: 5
   firstShootTime: 1
   missilePoint: {fileID: 40190951}
+  animator: {fileID: 0}
   missileLaunchSound: {fileID: 8300000, guid: 401ab34d6f54c944783c330438212e72, type: 3}
+--- !u!95 &2963687611050431252
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658532206}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02e9a85025d6ec040865c85a45f0efe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &820638353784530187
 GameObject:
   m_ObjectHideFlags: 0

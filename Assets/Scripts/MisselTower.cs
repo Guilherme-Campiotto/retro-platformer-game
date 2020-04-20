@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class MisselTower : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class MisselTower : MonoBehaviour
     public float shootInterval = 5f;
     public float firstShootTime = 1f;
     public Transform missilePoint;
+    public Animator animator;
     GameObject player;
 
     private SoundController soundController;
@@ -16,6 +18,7 @@ public class MisselTower : MonoBehaviour
     {
         soundController = GameObject.Find("SoundController").GetComponent<SoundController>();
         player = GameObject.Find("Player");
+        StartCoroutine("ShootIndicator", firstShootTime - 0.6f);
         InvokeRepeating("Shoot", firstShootTime, shootInterval);
     }
 
@@ -34,8 +37,19 @@ public class MisselTower : MonoBehaviour
     {
         if (!player.GetComponent<CharacterController2D>().dead)
         {
+            StartCoroutine("ShootIndicator", shootInterval- 0.6f);
             soundController.PlayAudioOnce(missileLaunchSound, 0.3f);
             Instantiate(prefabMissel, new Vector2(missilePoint.position.x, missilePoint.position.y), transform.rotation);
         }
     }
+
+    IEnumerator ShootIndicator(float time)
+    {
+        yield return new WaitForSeconds(time);
+        if (!player.GetComponent<CharacterController2D>().dead && animator != null)
+        {
+            animator.Play("MisselPipe");
+        }
+    }
+
 }

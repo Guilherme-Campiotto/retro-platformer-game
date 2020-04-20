@@ -1016,6 +1016,10 @@ PrefabInstance:
       propertyPath: shootInterval
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1280703267, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1176792036}
     - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
         type: 3}
       propertyPath: target
@@ -1026,6 +1030,12 @@ PrefabInstance:
 --- !u!4 &1176792035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 820638353784530185, guid: 2969897629e5a804d89b72f1a2be8700,
+    type: 3}
+  m_PrefabInstance: {fileID: 1176792034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1176792036 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2963687611050431252, guid: 2969897629e5a804d89b72f1a2be8700,
     type: 3}
   m_PrefabInstance: {fileID: 1176792034}
   m_PrefabAsset: {fileID: 0}
@@ -1402,6 +1412,15 @@ PrefabInstance:
       propertyPath: shootInterval
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1280703267, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1676642417}
+    - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4968219357995338621}
     - target: {fileID: 658532207, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.21
@@ -1410,16 +1429,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.11
       objectReference: {fileID: 0}
-    - target: {fileID: 820638353784530182, guid: 2969897629e5a804d89b72f1a2be8700,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4968219357995338621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2969897629e5a804d89b72f1a2be8700, type: 3}
 --- !u!4 &1676642416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 820638353784530185, guid: 2969897629e5a804d89b72f1a2be8700,
+    type: 3}
+  m_PrefabInstance: {fileID: 1676642415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1676642417 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2963687611050431252, guid: 2969897629e5a804d89b72f1a2be8700,
     type: 3}
   m_PrefabInstance: {fileID: 1676642415}
   m_PrefabAsset: {fileID: 0}
