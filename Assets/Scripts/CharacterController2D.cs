@@ -222,7 +222,6 @@ public class CharacterController2D : MonoBehaviour
             GetComponent<Rigidbody2D>().simulated = false;
             dead = true;
             StartCoroutine(GoToNextLevel());
-            Debug.Log("Tempo fase: " + stageTime);
         }
 
         CheckHazard(collision.gameObject);
@@ -301,9 +300,9 @@ public class CharacterController2D : MonoBehaviour
         PlayerPrefs.SetInt("jumpCount", jumpCount);
 
         // Conquista pular 100 vezes
-        if(jumpCount == 100 && scriptAchievments != null)
+        if(jumpCount >= 100 && scriptAchievments != null)
         {
-            scriptAchievments.UnlockSteamAchievement("1/9");
+            scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_9");
         }
     }
 
@@ -313,11 +312,12 @@ public class CharacterController2D : MonoBehaviour
     private void SaveDeathStatistics()
     {
         PlayerPrefs.SetInt("deathCount", deathCount);
+        Debug.Log("Deaths total: " + deathCount);
 
         // Conquista morrer 20 vezes
-        if(deathCount == 20 && scriptAchievments != null)
+        if(deathCount >= 20 && scriptAchievments != null)
         {
-            scriptAchievments.UnlockSteamAchievement("1/7");
+            scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_7");
         }
     }
 
@@ -328,6 +328,8 @@ public class CharacterController2D : MonoBehaviour
     {
         deathCount = PlayerPrefs.GetInt("deathCount");
         jumpCount = PlayerPrefs.GetInt("jumpCount");
+
+        Debug.Log("Jumps total: " + jumpCount);
     }
 
     private void UpdateTimer()

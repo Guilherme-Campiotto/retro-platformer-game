@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Steamworks;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -54,6 +55,7 @@ public class GameController : MonoBehaviour
         if(steamAchievements != null)
         {
             scriptAchievments = steamAchievements.GetComponent<SteamAchievements>();
+            LoadStatistics();
         }
 
         Time.timeScale = 1f;
@@ -79,27 +81,23 @@ public class GameController : MonoBehaviour
             // Conquista zerar o jogo
             if(scriptAchievments != null)
             {
-                scriptAchievments.UnlockSteamAchievement("1/6");
+                Debug.Log("Achievement 1/6: Zerar o jogo");
+                scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_6");
             }
 
             // Conquista ultima fase sem morrer
             if(player.GetComponent<CharacterController2D>().deathCountStage == 0 && scriptAchievments != null)
             {
-                scriptAchievments.UnlockSteamAchievement("1/8");
-            }
-
-            // Conquista passar fase 1-4 em menos de 10 segundos
-            if(SceneManager.GetActiveScene().buildIndex == 8 && player.GetComponent<CharacterController2D>().stageTime <= 10f && scriptAchievments != null)
-            {
-                scriptAchievments.UnlockSteamAchievement("1/11");
+                Debug.Log("Achievement 1/8: Passar ultima fase sem morrer");
+                scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_8");
             }
 
             endGamePanel.SetActive(true);
         } else
         {
-            SceneManager.LoadScene(nextScene);
-
             SaveProgress(nextScene);
+
+            SceneManager.LoadScene(nextScene);
         }
     }
 
@@ -207,37 +205,66 @@ public class GameController : MonoBehaviour
 
     private void SaveProgress(int nextScene)
     {
+        Debug.Log("salvando progresso...");
         int progress = PlayerPrefs.GetInt("PlayerProgress");
 
         if (progress < nextScene && nextScene > 2)
         {
             PlayerPrefs.SetInt("PlayerProgress", nextScene);
         }
+
+        Debug.Log("Tempo fase: " + player.GetComponent<CharacterController2D>().stageTime);
+
         if(scriptAchievments != null)
         {
             switch (nextScene)
             {
                 case 13:
                     // Conquista passar todas as fases do mundo 1
-                    scriptAchievments.UnlockSteamAchievement("1/0");
+                    Debug.Log("Achievement 1/0: Passar mundo 1");
+                    scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_0");
                     break;
                 case 20:
                     // Conquista passar todas as fases do mundo 2
-                    scriptAchievments.UnlockSteamAchievement("1/1");
+                    Debug.Log("Achievement 1/1: Passar mundo 2");
+                    scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_1");
                     break;
                 case 27:
                     // Conquista passar todas as fases do mundo 3
-                    scriptAchievments.UnlockSteamAchievement("1/2");
+                    Debug.Log("Achievement 1/2: Passar mundo 3");
+                    scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_2");
                     break;
                 case 34:
                     // Conquista passar todas as fases do mundo 4
-                    scriptAchievments.UnlockSteamAchievement("1/3");
+                    Debug.Log("Achievement 1/3: Passar mundo 4");
+                    scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_3");
                     break;
                 case 41:
                     // Conquista passar todas as fases do mundo 5
-                    scriptAchievments.UnlockSteamAchievement("1/4");
+                    Debug.Log("Achievement 1/4: Passar mundo 5");
+                    scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_4");
                     break;
             }
+
+            // Conquista passar fase 1-4 em menos de 10 segundos
+            if (SceneManager.GetActiveScene().buildIndex == 9 && player.GetComponent<CharacterController2D>().stageTime <= 10f)
+            {
+                Debug.Log("Achievement 1/11: Passar fase 1-4 em menos de 10 segundos");
+                scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_10");
+            }
+        } else
+        {
+            Debug.Log("scriptAchievments is null");
+        }
+    }
+
+    public void LoadStatistics()
+    {
+        SteamAchievements.unlockAchievementsCount = PlayerPrefs.GetInt("unlockAchievementsCount");
+        if(SteamAchievements.unlockAchievementsCount >= 10)
+        {
+            Debug.Log("Achievement 1/12: Pegar todas as conquistas");
+            scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_11");
         }
     }
 

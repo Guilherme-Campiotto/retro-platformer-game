@@ -13,6 +13,7 @@ TagManager:
   - SoundController
   - trampoline
   - tank
+  - SteamAchievements
   layers:
   - Default
   - TransparentFX

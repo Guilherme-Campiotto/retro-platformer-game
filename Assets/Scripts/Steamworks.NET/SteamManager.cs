@@ -117,6 +117,7 @@ public class SteamManager : MonoBehaviour {
 		    s_EverInitialized = true;
         } else
         {
+			Debug.Log("False enabled");
             gameObject.SetActive(false);
         }
 	}

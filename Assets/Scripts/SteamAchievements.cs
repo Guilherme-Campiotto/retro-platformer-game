@@ -7,13 +7,29 @@ public class SteamAchievements : MonoBehaviour
 {
 
     public static SteamAchievements script;
+    public static int unlockAchievementsCount = 0;
     public bool isAchievementCollected = false;
+
+    public static SteamAchievements instance { get; private set; } = null;
 
     public bool debugForSteam= false;
     public int debugSteamAchievementCounter = 0;
 
-    private void Awake()
+    void Awake()
     {
+        //PlayerPrefs.SetInt("unlockAchievementsCount", 0);
+        //SteamUserStats.ResetAllStats(true); // apaga todas as conquistas
+
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        } else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
         //debug only
         debugForSteam = true;
 
@@ -23,7 +39,6 @@ public class SteamAchievements : MonoBehaviour
             gameObject.SetActive(false);
         }
 
-        DontDestroyOnLoad(gameObject);
     }
 
     public void Update()
@@ -40,8 +55,18 @@ public class SteamAchievements : MonoBehaviour
         TestSteamAchievement(id);
         if(!isAchievementCollected)
         {
+            unlockAchievementsCount++;
+            PlayerPrefs.SetInt("unlockAchievementsCount", unlockAchievementsCount);
+            Debug.Log("Conquistas conquistadas: " + unlockAchievementsCount);
             SteamUserStats.SetAchievement(id);
             SteamUserStats.StoreStats();
+
+
+            if(unlockAchievementsCount == 10)
+            {
+                Debug.Log("Achievement 1/12: Pegar todas as conquistas");
+                UnlockSteamAchievement("NEW_ACHIEVEMENT_1_11");
+            }
         }
     }
 
