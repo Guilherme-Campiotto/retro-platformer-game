@@ -261,6 +261,16 @@ PrefabInstance:
       propertyPath: launchForce
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840d36a3e039d0f4388fb31ea2de9ea0, type: 3}
 --- !u!4 &9684888 stripped
@@ -415,6 +425,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840d36a3e039d0f4388fb31ea2de9ea0, type: 3}
@@ -1127,6 +1147,16 @@ PrefabInstance:
         type: 3}
       propertyPath: launchForce
       value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840d36a3e039d0f4388fb31ea2de9ea0, type: 3}
@@ -1906,6 +1936,16 @@ PrefabInstance:
         type: 3}
       propertyPath: launchForce
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 819789671681851827, guid: 840d36a3e039d0f4388fb31ea2de9ea0,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840d36a3e039d0f4388fb31ea2de9ea0, type: 3}

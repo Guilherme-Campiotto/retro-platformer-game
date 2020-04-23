@@ -1,0 +1,736 @@
+fileFormatVersion: 2
+guid: 87a80305e2170984fbb848713270215e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5034044751220056550
+    second: explosao_nova_0
+  - first:
+      213: 356915897378892083
+    second: explosao_nova_1
+  - first:
+      213: 3309277250741624244
+    second: explosao_nova_2
+  - first:
+      213: -4047075580009876237
+    second: explosao_nova_3
+  - first:
+      213: 1077573240357310978
+    second: explosao_nova_4
+  - first:
+      213: -2102552943701239962
+    second: explosao_nova_5
+  - first:
+      213: 7122850488735244231
+    second: explosao_nova_6
+  - first:
+      213: 3095965238731836293
+    second: explosao_nova_7
+  - first:
+      213: -4912992897530976405
+    second: explosao_nova_8
+  - first:
+      213: 6819454216174911570
+    second: explosao_nova_9
+  - first:
+      213: -6442004845573290848
+    second: explosao_nova_10
+  - first:
+      213: -7162101905912221780
+    second: explosao_nova_11
+  - first:
+      213: -8613269491065675974
+    second: explosao_nova_12
+  - first:
+      213: -1592892970180800210
+    second: explosao_nova_13
+  - first:
+      213: -3462758799601992742
+    second: explosao_nova_14
+  - first:
+      213: -2553453815846079800
+    second: explosao_nova_15
+  - first:
+      213: -283351061922938390
+    second: explosao_nova_16
+  - first:
+      213: -3334793440965533935
+    second: explosao_nova_16
+  - first:
+      213: 4113453589575540934
+    second: explosao_nova_18
+  - first:
+      213: -4854105075485390735
+    second: explosao_nova_17
+  - first:
+      213: -3916743383299548679
+    second: explosao_nova_20
+  - first:
+      213: -7369942032281730846
+    second: explosao_nova_21
+  - first:
+      213: 3328975165677002111
+    second: explosao_nova_22
+  - first:
+      213: 5442970681480467746
+    second: explosao_nova_23
+  - first:
+      213: -6484858716880095743
+    second: explosao_nova_24
+  - first:
+      213: 2256322184367079166
+    second: explosao_nova_18
+  - first:
+      213: -5987949274615052784
+    second: explosao_nova_26
+  - first:
+      213: 2097710828325423098
+    second: explosao_nova_19
+  - first:
+      213: -7961525899386249915
+    second: explosao_nova_28
+  - first:
+      213: -8824808728385633005
+    second: explosao_nova_20
+  - first:
+      213: 3070478024334364432
+    second: explosao_nova_30
+  - first:
+      213: -853328577867652456
+    second: explosao_nova_21
+  - first:
+      213: 5872066207464073155
+    second: explosao_nova_32
+  - first:
+      213: -445425059581209367
+    second: explosao_nova_33
+  - first:
+      213: -3899630968465243833
+    second: explosao_nova_34
+  - first:
+      213: 836512849161135293
+    second: explosao_nova_35
+  - first:
+      213: 4901972378940722089
+    second: explosao_nova_36
+  - first:
+      213: 7228847863172394613
+    second: explosao_nova_37
+  - first:
+      213: -7391906768952035526
+    second: explosao_nova_38
+  - first:
+      213: 4581965834564738681
+    second: explosao_nova_39
+  - first:
+      213: -7944474944385026223
+    second: explosao_nova_40
+  - first:
+      213: -1729991092910327532
+    second: explosao_nova_41
+  - first:
+      213: 1339879786738914240
+    second: explosao_nova_42
+  - first:
+      213: 8004208345646606842
+    second: explosao_nova_43
+  - first:
+      213: -6378404540332530635
+    second: explosao_nova_44
+  - first:
+      213: 1209075349558338361
+    second: explosao_nova_45
+  - first:
+      213: 7710777810523212957
+    second: explosao_nova_46
+  - first:
+      213: 1502121864125395332
+    second: explosao_nova_47
+  - first:
+      213: -6065357007919638225
+    second: explosao_nova_48
+  - first:
+      213: 3075974536937257156
+    second: explosao_nova_49
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: explosao_nova_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 968
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df34a5795149fc643a124e69f7e6c738
+      internalID: -5034044751220056550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 946
+        width: 103
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf627533855b594eae56465ca6a6e8f
+      internalID: 356915897378892083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_2
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 946
+        width: 103
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc84f218ec14b14ea130c85391b0f06
+      internalID: 3309277250741624244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_3
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 946
+        width: 123
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a502fc2bfd4f8494ca5c172899dc10da
+      internalID: -4047075580009876237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_4
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 934
+        width: 155
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043cbe10a7534e740a5a9def613cd991
+      internalID: 1077573240357310978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_5
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 934
+        width: 155
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4fd1c23bead2d45bdce6a2d3a9dfa2
+      internalID: -2102552943701239962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 650
+        width: 156
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42c9945fe4d0144b9e60cf6ae6ff23e
+      internalID: 7122850488735244231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_7
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 639
+        width: 174
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5f6e0c907b5914e903ed4a9fe92e5e
+      internalID: 3095965238731836293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_8
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 631
+        width: 187
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9fe7409f2b41c428418175fd97f6e4
+      internalID: -4912992897530976405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_9
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 629
+        width: 187
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77927a2c35c318645a51c6dd99db6e77
+      internalID: 6819454216174911570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_10
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 627
+        width: 216
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c602974267bfbd4f87895dc589b1714
+      internalID: -6442004845573290848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_11
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 615
+        width: 232
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af80ec2ab71e434ba0945dda2ccd45f
+      internalID: -7162101905912221780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 321
+        width: 264
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b81c4bf98b9e374db1dd7d448dee97c
+      internalID: -8613269491065675974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_13
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 319
+        width: 263
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26b88a0b38f66e4f9c7d4dd3152e80e
+      internalID: -1592892970180800210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_14
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 312
+        width: 274
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4342bf7a0f0bd4428206cc96949a867
+      internalID: -3462758799601992742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_15
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 298
+        width: 315
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b8cdac295cb9e4d8043cd0c5df8842
+      internalID: -2553453815846079800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_16
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 290
+        width: 320
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b461f323d9599a04fa06ec53a62c569c
+      internalID: -3334793440965533935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_17
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 291
+        width: 329
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a0b97b40a498d40b9e156335e600ec
+      internalID: -4854105075485390735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb0e6dcfdc76574dbbaa71f2e12d907
+      internalID: 2256322184367079166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 334
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cdb717293dc3c4a9f19d5750a5b762
+      internalID: 2097710828325423098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_20
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 0
+        width: 335
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255c82090540fe04ca1fa9b22f7b73c4
+      internalID: -8824808728385633005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_21
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 330
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7cb612be00d6945aaec93e3c3394a9
+      internalID: -853328577867652456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosao_nova_26
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 0
+        width: 330
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e647d81a224edd4495e70223067121c
+      internalID: -5987949274615052784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
