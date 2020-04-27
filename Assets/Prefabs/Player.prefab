@@ -342,7 +342,7 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 67905298}
   m_WallCheck: {fileID: 530230495}
   m_Grounded: 0
-  wallCheckDistance: 0.6
+  wallCheckDistance: 0.2
   m_Rigidbody2D: {fileID: 0}
   m_FacingRight: 1
   deathSound: {fileID: 8300000, guid: a4a5308a566e12f49af043d145ee0e52, type: 3}

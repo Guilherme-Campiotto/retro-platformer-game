@@ -31,7 +31,7 @@ public class StageSelectController : MonoBehaviour
         
         if(playerCurrentScene == 0)
         {
-            playerCurrentScene = 2;
+            playerCurrentScene = 3;
             PlayerPrefs.SetInt("PlayerProgress", playerCurrentScene);
         }
     }
@@ -46,7 +46,7 @@ public class StageSelectController : MonoBehaviour
 
     void SetImagesLockedStage()
     {
-        int sceneIndex = 2;
+        int sceneIndex = 3;
         foreach(Image lockedImage in listImagesLocked)
         {
             if(sceneIndex < playerCurrentScene)

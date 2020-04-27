@@ -213,7 +213,10 @@ public class GameController : MonoBehaviour
             PlayerPrefs.SetInt("PlayerProgress", nextScene);
         }
 
-        Debug.Log("Tempo fase: " + player.GetComponent<CharacterController2D>().stageTime);
+        if(player)
+        {
+            Debug.Log("Tempo fase: " + player.GetComponent<CharacterController2D>().stageTime);
+        }
 
         if(scriptAchievments != null)
         {

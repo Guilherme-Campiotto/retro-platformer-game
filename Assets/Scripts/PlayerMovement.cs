@@ -89,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
                     jump = false;
                     controller.doubleJump = false;
                     wallJump = true;
+                    animator.SetBool("isJumping", true);
                 }
             }
         }
@@ -125,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
         if(GetComponent<Rigidbody2D>().velocity.y == 0)
         {
             animator.SetBool("isFalling", false);
-        } else if(GetComponent<Rigidbody2D>().velocity.y > 0)
+        } else if(GetComponent<Rigidbody2D>().velocity.y <= 0)
         {
             animator.SetBool("isFalling", true);
         }
