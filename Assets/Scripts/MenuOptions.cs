@@ -384,8 +384,9 @@ public class MenuOptions : MonoBehaviour
     {
         audioMixer.SetFloat("volume", volume);
 
-        if(volume == -80)
+        if(volume == -50)
         {
+            audioMixer.SetFloat("volume", -80);
             soundConfig = "Off";
             soundConfigButton.GetComponent<Image>().sprite = soundOffSprite;
         } else
