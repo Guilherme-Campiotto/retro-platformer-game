@@ -46,7 +46,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.8117648, g: 0.19215688, b: 0.18823531, a: 1}
+  m_Color: {r: 0.93333334, g: 0.39215687, b: 0.22352941, a: 1}
   m_Intensity: 1.2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -66,19 +66,19 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.59
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -1.0273803, y: 0.32134795, z: 0}
-  - {x: -1.1768931, y: -0.035283078, z: 0}
-  - {x: -0.96579957, y: -0.37211177, z: 0}
-  - {x: -0.5801985, y: -0.4774563, z: 0}
-  - {x: -0.46621385, y: -0.46403614, z: 0}
+  - {x: -1.1095307, y: 0.29263908, z: 0}
+  - {x: -1.2552292, y: 0.009131089, z: 0}
+  - {x: -1.1113111, y: -0.28020078, z: 0}
+  - {x: -0.6212418, y: -0.3506685, z: 0}
+  - {x: -0.3275346, y: -0.33562785, z: 0}
   - {x: -0.0867957, y: -0.30936044, z: 0}
-  - {x: 0.2197198, y: -0.29531124, z: 0}
+  - {x: 0.13022482, y: -0.25398082, z: 0}
   - {x: 0.4091406, y: -0.17681846, z: 0}
   - {x: 0.8279496, y: -0.06273557, z: 0}
   - {x: 0.59027624, y: 0.08716237, z: 0}
   - {x: 0.28399882, y: 0.33679944, z: 0}
   - {x: -0.015632844, y: 0.40617388, z: 0}
-  - {x: -0.28389752, y: 0.44211146, z: 0}
+  - {x: -0.2632638, y: 0.34571737, z: 0}
   - {x: -0.69650877, y: 0.480377, z: 0}
 --- !u!1 &6540924282555749338
 GameObject:
@@ -154,13 +154,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2497427927823307793, guid: 3e1867079f778bb4ca85e7d4035e9dc3,
+  m_Sprite: {fileID: -8311075899459026440, guid: 3acb4a53afacd7947b674470583bb2b0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.28, y: 2.34}
+  m_Size: {x: 2.59, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -220,8 +220,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.61, y: 0.96}
-    newSize: {x: 2.28, y: 2.34}
+    oldSize: {x: 2.59, y: 0.96}
+    newSize: {x: 2.59, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 3e1867079f778bb4ca85e7d4035e9dc3
+guid: 3acb4a53afacd7947b674470583bb2b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2497427927823307793
-    second: bola de fogo em arco_0
+      213: -8311075899459026440
+    second: bola de fogo arco nova_0
   - first:
-      213: -6400709483251139468
-    second: bola de fogo em arco_1
+      213: 5440323473691163226
+    second: bola de fogo arco nova_2
   - first:
-      213: -4322434091283963346
-    second: bola de fogo em arco_2
+      213: -7712758821060684361
+    second: bola de fogo arco nova_3
   - first:
-      213: -4840990270569648320
-    second: bola de fogo em arco_3
+      213: -5828359788109335051
+    second: bola de fogo arco nova_4
   - first:
-      213: -4866614214485035253
-    second: bola de fogo em arco_4
+      213: -1993608455772253403
+    second: bola de fogo arco nova_5
   - first:
-      213: 637924892373944673
-    second: bola de fogo em arco_5
+      213: 5331162543609676035
+    second: bola de fogo arco nova_6
   - first:
-      213: 6375146100620704720
-    second: bola de fogo em arco_6
+      213: -3405869117142497243
+    second: bola de fogo arco nova_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,148 +107,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bola de fogo em arco_0
+      name: bola de fogo arco nova_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 22
         y: 0
-        width: 261
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 659018393825de844b87f85363b45baa
-      internalID: 2497427927823307793
+      spriteID: 0c423b7f366c316489c55410c9a5cfeb
+      internalID: -8311075899459026440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo em arco_1
+      name: bola de fogo arco nova_2
       rect:
         serializedVersion: 2
-        x: 293
+        x: 287
         y: 0
-        width: 261
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92fe1dd9e546f46478dd5bf20256fce7
-      internalID: -6400709483251139468
+      spriteID: 66ef116819ffe8545bdbbd667ec71344
+      internalID: 5440323473691163226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo em arco_2
+      name: bola de fogo arco nova_3
       rect:
         serializedVersion: 2
-        x: 585
+        x: 571
         y: 0
-        width: 260
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb7f402d56375294a8672cf8d0e52bd0
-      internalID: -4322434091283963346
+      spriteID: d35b9843a8934ad46aece2c3e3dc7603
+      internalID: -7712758821060684361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo em arco_3
+      name: bola de fogo arco nova_4
       rect:
         serializedVersion: 2
-        x: 866
+        x: 855
         y: 0
-        width: 260
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d23aa253e1c45ab499deecd746680a94
-      internalID: -4840990270569648320
+      spriteID: 7e792bd9d771d5b45b157c1e907db0b5
+      internalID: -5828359788109335051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo em arco_4
+      name: bola de fogo arco nova_5
       rect:
         serializedVersion: 2
-        x: 1149
+        x: 1138
         y: 0
-        width: 261
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f3d2bb11c8307d4ba7f58deb03c99b0
-      internalID: -4866614214485035253
+      spriteID: 4044ac79569daef48a7b1f5adaf12ec7
+      internalID: -1993608455772253403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo em arco_5
+      name: bola de fogo arco nova_6
       rect:
         serializedVersion: 2
-        x: 1433
+        x: 1422
         y: 0
-        width: 260
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2b519f1aa5f526429321581ed1a080e
-      internalID: 637924892373944673
+      spriteID: 80834621b6275f24a9c63d87a02c70b9
+      internalID: 5331162543609676035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo em arco_6
+      name: bola de fogo arco nova_7
       rect:
         serializedVersion: 2
-        x: 1716
+        x: 1705
         y: 0
-        width: 261
+        width: 259
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 820b923d128f10849adcc75f5ca27fae
-      internalID: 6375146100620704720
+      spriteID: 64ee3bfa42b21db42bf8ba08027a3eee
+      internalID: -3405869117142497243
       vertices: []
       indices: 
       edges: []

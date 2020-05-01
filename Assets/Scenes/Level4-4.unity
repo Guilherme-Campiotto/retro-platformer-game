@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 7469110874045400826, guid: f8ee1f03e295bbe43b892f08802e7998,
         type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ee1f03e295bbe43b892f08802e7998, type: 3}
@@ -646,6 +646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hole (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564036076054084465, guid: 00a80ae3df0631840ac1cf2cba3e08f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2564036076054084463, guid: 00a80ae3df0631840ac1cf2cba3e08f3,
         type: 3}
@@ -1636,7 +1641,7 @@ PrefabInstance:
     - target: {fileID: 2564036076054084463, guid: 00a80ae3df0631840ac1cf2cba3e08f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.261991
+      value: -4.06
       objectReference: {fileID: 0}
     - target: {fileID: 2564036076054084463, guid: 00a80ae3df0631840ac1cf2cba3e08f3,
         type: 3}
@@ -2091,6 +2096,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092870571, guid: 84d38e06f7696bd4fbe267565fe1afdf, type: 3}
+      propertyPath: m_Intensity
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d38e06f7696bd4fbe267565fe1afdf, type: 3}

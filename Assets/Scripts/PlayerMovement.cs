@@ -118,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(isInAir && ((Physics2D.gravity.y < 0f && GetComponent<Rigidbody2D>().velocity.y < 0f) || (Physics2D.gravity.y > 0f && GetComponent<Rigidbody2D>().velocity.y > 0.2f)))
         {
+            Debug.Log("True no primeiro");
             animator.SetBool("isFalling", true);
             animator.SetBool("isJumping", false);
             animator.SetBool("isDoubleJumping", false);
@@ -126,8 +127,10 @@ public class PlayerMovement : MonoBehaviour
         if(GetComponent<Rigidbody2D>().velocity.y == 0)
         {
             animator.SetBool("isFalling", false);
-        } else if(GetComponent<Rigidbody2D>().velocity.y <= 0)
+        } else if(GetComponent<Rigidbody2D>().velocity.y < 0)
         {
+            Debug.Log("True no segundo");
+            Debug.Log(GetComponent<Rigidbody2D>().velocity.y);
             animator.SetBool("isFalling", true);
         }
 

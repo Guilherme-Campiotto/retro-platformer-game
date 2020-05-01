@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: cbeeb06d8fd2698428ac3cc400242c08
+guid: 01c8ddb52204fe349a07a4ab5a3c6d57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7402772833993885721
-    second: bola de fogo_0
+      213: 2914657215681344098
+    second: bola de fogo nova_0
   - first:
-      213: 3342344371047877942
-    second: bola de fogo_1
+      213: -7268736076391780345
+    second: bola de fogo nova_3
   - first:
-      213: 8025115497713055156
-    second: bola de fogo_2
+      213: -3912154064771999644
+    second: bola de fogo nova_6
   - first:
-      213: -7009310316492482919
-    second: bola de fogo_3
+      213: -8349277875822601662
+    second: bola de fogo nova_8
   - first:
-      213: 487341924705853357
-    second: bola de fogo_4
+      213: -8181326895711429034
+    second: bola de fogo nova_9
   - first:
-      213: -2703333403628653508
-    second: bola de fogo_5
+      213: -1758822038051565620
+    second: bola de fogo nova_10
   - first:
-      213: -5525232177994077356
-    second: bola de fogo_6
+      213: 6172829395626334823
+    second: bola de fogo nova_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,148 +107,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bola de fogo_0
+      name: bola de fogo nova_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 278
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22e0d7c18b0081845b6ca78fe4339d46
-      internalID: -7402772833993885721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bola de fogo_1
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 2
-        width: 278
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbe8a48a04178c04c996e1c17c90e1b0
-      internalID: 3342344371047877942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bola de fogo_2
-      rect:
-        serializedVersion: 2
-        x: 556
-        y: 2
-        width: 278
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f0d6116bb397dd46966b92b821cf80c
-      internalID: 8025115497713055156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bola de fogo_3
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 2
-        width: 278
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c073220e6d167b4fb3ddeb33506bf09
-      internalID: -7009310316492482919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bola de fogo_4
-      rect:
-        serializedVersion: 2
-        x: 1116
+        x: 21
         y: 1
-        width: 278
+        width: 241
         height: 94
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4fb021d6f4a25c4c9218ef1ddd77482
-      internalID: 487341924705853357
+      spriteID: 3d68f2ea2f492db469510bb5d4d9c6de
+      internalID: 2914657215681344098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo_5
+      name: bola de fogo nova_3
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 2
-        width: 278
-        height: 94
+        x: 314
+        y: 0
+        width: 241
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c409fac9c109ae1438c3c1874b66b27c
-      internalID: -2703333403628653508
+      spriteID: f6620850f7256924f9d7e9c069749952
+      internalID: -7268736076391780345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bola de fogo_6
+      name: bola de fogo nova_6
       rect:
         serializedVersion: 2
-        x: 1677
-        y: 2
-        width: 278
-        height: 94
+        x: 606
+        y: 0
+        width: 241
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b310ea7720cc0f4c8bb3e51b4bb2f9e
-      internalID: -5525232177994077356
+      spriteID: 9b36d41a8cba5d24f859846be7cca14e
+      internalID: -3912154064771999644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola de fogo nova_8
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 0
+        width: 241
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaa0c24aa99f87488aed61d1cd5a9b9
+      internalID: -8349277875822601662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola de fogo nova_9
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 241
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffc8ca37b4d00d4aa414ec5b980f624
+      internalID: -8181326895711429034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola de fogo nova_10
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 0
+        width: 241
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5edbc6d3721dc44b179879787fb9c0
+      internalID: -1758822038051565620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola de fogo nova_11
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 0
+        width: 241
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5e985078d66b544b18732c4291fac0
+      internalID: 6172829395626334823
       vertices: []
       indices: 
       edges: []

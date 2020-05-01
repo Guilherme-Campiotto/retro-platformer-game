@@ -66,18 +66,19 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 1.02
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -1.3692157, y: -0.03241409, z: 0}
-  - {x: -1.1802617, y: -0.41620818, z: 0}
-  - {x: -0.7778968, y: -0.49170282, z: 0}
-  - {x: -0.3040847, y: -0.2521883, z: 0}
+  - {x: -1.2086078, y: 0.02323329, z: 0}
+  - {x: -1.0957305, y: -0.29873106, z: 0}
+  - {x: -0.73563075, y: -0.44223833, z: 0}
+  - {x: -0.43875277, y: -0.45877606, z: 0}
+  - {x: -0.21109977, y: -0.33875152, z: 0}
   - {x: 0.12379179, y: -0.23989342, z: 0}
   - {x: -0.05125574, y: -0.06559476, z: 0}
   - {x: 0.18005583, y: 0.081381954, z: 0}
   - {x: -0.056641497, y: 0.28061524, z: 0}
   - {x: 0.1351641, y: 0.40721464, z: 0}
-  - {x: -0.35786262, y: 0.34033215, z: 0}
+  - {x: -0.18880098, y: 0.37124643, z: 0}
   - {x: -0.67278737, y: 0.4708104, z: 0}
-  - {x: -1.1786646, y: 0.32934225, z: 0}
+  - {x: -1.0349609, y: 0.3664407, z: 0}
 --- !u!1 &819789671681851824
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +153,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2497427927823307793, guid: 3e1867079f778bb4ca85e7d4035e9dc3,
+  m_Sprite: {fileID: 2914657215681344098, guid: 01c8ddb52204fe349a07a4ab5a3c6d57,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -215,7 +216,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.61, y: 0.96}
+    oldSize: {x: 2.41, y: 0.94}
     newSize: {x: 2.28, y: 2.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -234,7 +235,7 @@ Animator:
   m_GameObject: {fileID: 819789671681851824}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8aa4793f3d75c844970f58f1c0ca65a, type: 2}
+  m_Controller: {fileID: 9100000, guid: cf91d905b8d7edf4e81ddabb41fd349c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
