@@ -22,7 +22,7 @@ using Steamworks;
 [DisallowMultipleComponent]
 public class SteamManager : MonoBehaviour {
 
-    public bool steamEnabled;
+    public bool steamEnabled = true;
 
 	protected static SteamManager s_instance;
 	protected static SteamManager Instance {

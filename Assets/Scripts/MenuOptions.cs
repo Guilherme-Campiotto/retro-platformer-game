@@ -38,6 +38,15 @@ public class MenuOptions : MonoBehaviour
     private bool ps4Controller = false;
     private bool xboxOneController = false;
 
+    PlayerControlsNew controls;
+
+    private void Awake()
+    {
+        controls = new PlayerControlsNew();
+        controls.Gameplay.Cancel.performed += context => CancelAction();
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,6 +120,7 @@ public class MenuOptions : MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetButtonDown("Cancel"))
         {
             if(controlsPanel != null && controlsPanel.activeSelf)
@@ -124,10 +134,28 @@ public class MenuOptions : MonoBehaviour
                 CloseInstructionsPanel();
             }
         }
+        */
 
         if(xboxImageControls != null && ps4ImageControls != null && keyboardImageControls != null)
         {
             CheckControllerConected();
+        }
+    }
+
+    void CancelAction()
+    {
+        Debug.Log("Cancelou a ação");
+        if (controlsPanel != null && controlsPanel.activeSelf)
+        {
+            CloseControlsPanel();
+        }
+        else if (settingsPanel != null && settingsPanel.activeSelf)
+        {
+            closeSettingsPanel();
+        }
+        else if (instructionsPanel != null && instructionsPanel.activeSelf)
+        {
+            CloseInstructionsPanel();
         }
     }
 

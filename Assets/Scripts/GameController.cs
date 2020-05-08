@@ -263,11 +263,14 @@ public class GameController : MonoBehaviour
 
     public void LoadStatistics()
     {
-        SteamAchievements.unlockAchievementsCount = PlayerPrefs.GetInt("unlockAchievementsCount");
-        if(SteamAchievements.unlockAchievementsCount >= 10)
+        if(scriptAchievments != null && steamAchievements.activeSelf)
         {
-            Debug.Log("Achievement 1/12: Pegar todas as conquistas");
-            scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_11");
+            SteamAchievements.unlockAchievementsCount = PlayerPrefs.GetInt("unlockAchievementsCount");
+            if(SteamAchievements.unlockAchievementsCount >= 10)
+            {
+                Debug.Log("Achievement 1/12: Pegar todas as conquistas");
+                scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_11");
+            }
         }
     }
 

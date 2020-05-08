@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    PlayerControlsNew controls;
 
     public CharacterController2D controller;
     public Animator animator;
@@ -18,6 +20,18 @@ public class PlayerMovement : MonoBehaviour
     private MenuOptions menuOptions;
     public bool isGamePaused = false;
 
+    Vector2 move;
+
+
+    private void Awake()
+    {
+        controls = new PlayerControlsNew();
+        controls.Gameplay.Pause.performed += context => PauseGame();
+        controls.Gameplay.Jump.performed += context => CheckJump();
+        controls.Gameplay.Move.performed += context => move = context.ReadValue<Vector2>();
+        controls.Gameplay.Move.canceled += context => move = Vector2.zero;
+    }
+
     private void Start()
     {
         menuOptions = GameObject.Find("Canvas").GetComponent<MenuOptions>();
@@ -31,15 +45,17 @@ public class PlayerMovement : MonoBehaviour
         {
             CheckMovimentation();
             animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-            CheckJump();
+            //CheckJump();
             CheckWallSlide();
         }
 
+        /*
         if(Input.GetButtonDown("Pause"))
         {
             isGamePaused = true;
             menuOptions.ChangeGameState();
         }
+        */
 
         if(Time.timeScale == 1f) {
             isGamePaused = false;
@@ -54,6 +70,22 @@ public class PlayerMovement : MonoBehaviour
 
         jump = false;
         wallJump = false;
+    }
+
+    private void PauseGame()
+    {
+        isGamePaused = true;
+        menuOptions.ChangeGameState();
+    }
+
+    private void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Gameplay.Disable();
     }
 
     /**
@@ -81,17 +113,6 @@ public class PlayerMovement : MonoBehaviour
                 controller.m_Rigidbody2D.velocity = new Vector2(controller.m_Rigidbody2D.velocity.x, -maxWallSlidingVelocity);
             }
 
-            if (controller.m_Rigidbody2D.velocity.y < 0)
-            {
-                // wall jump
-                if (Input.GetButtonDown("Jump"))
-                {
-                    jump = false;
-                    controller.doubleJump = false;
-                    wallJump = true;
-                    animator.SetBool("isJumping", true);
-                }
-            }
         }
     }
 
@@ -100,25 +121,37 @@ public class PlayerMovement : MonoBehaviour
      */
     private void CheckJump()
     {
-        if (Input.GetButtonDown("Jump") && jump == false && !wallSliding)
+        if(!controller.dead && !isGamePaused && jump == false)
         {
-            jump = true;
-            isInAir = true;
-            animator.SetBool("isJumping", true);
-        }
-        if (Input.GetButtonDown("Jump") && !controller.m_Grounded)
-        {
-            controller.enableDoubleJump();
+
+            if (controller.m_Rigidbody2D.velocity.y < 0 && wallSliding)
+            {
+                // wall jump
+                jump = false;
+                controller.doubleJump = false;
+                wallJump = true;
+                animator.SetBool("isJumping", true);
+            } else if (/*Input.GetButtonDown("Jump") &&*/ !wallSliding)
+            {
+                jump = true;
+                isInAir = true;
+                animator.SetBool("isJumping", true);
+
+                if (/*Input.GetButtonDown("Jump") &&*/  !controller.m_Grounded)
+                {
+                    controller.enableDoubleJump();
+                }
+            }
+
         }
     }
 
     private void CheckMovimentation()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        horizontalMove = move.x * runSpeed;
 
         if(isInAir && ((Physics2D.gravity.y < 0f && GetComponent<Rigidbody2D>().velocity.y < 0f) || (Physics2D.gravity.y > 0f && GetComponent<Rigidbody2D>().velocity.y > 0.2f)))
         {
-            Debug.Log("True no primeiro");
             animator.SetBool("isFalling", true);
             animator.SetBool("isJumping", false);
             animator.SetBool("isDoubleJumping", false);
@@ -129,8 +162,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isFalling", false);
         } else if(GetComponent<Rigidbody2D>().velocity.y < 0)
         {
-            Debug.Log("True no segundo");
-            Debug.Log(GetComponent<Rigidbody2D>().velocity.y);
             animator.SetBool("isFalling", true);
         }
 
