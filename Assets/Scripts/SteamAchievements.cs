@@ -43,10 +43,12 @@ public class SteamAchievements : MonoBehaviour
 
     public void Update()
     {
+        /*
         if(debugForSteam)
         {
             DEBUG_checkDebugControls();
         }
+        */
         
     }
 
@@ -86,6 +88,7 @@ public class SteamAchievements : MonoBehaviour
 
     public void DEBUG_checkDebugControls()
     {
+        /*
         if(Input.GetButtonDown("UnlockAchiev."))
         {
             UnlockSteamAchievement(debugSteamAchievementCounter.ToString());
@@ -102,5 +105,6 @@ public class SteamAchievements : MonoBehaviour
         {
             debugSteamAchievementCounter = 0;
         }
+        */
     }
 }

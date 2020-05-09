@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5663141628836884418}
   - component: {fileID: 5663141628836884419}
-  - component: {fileID: 5663141628836884416}
+  - component: {fileID: 7831051425859543299}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &5663141628836884416
+--- !u!114 &7831051425859543299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,26 +56,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5663141628836884417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_RepeatRate: 0.1
-  m_ActionsAsset: {fileID: -944628639613478452, guid: 598138e7a8735a1469b6fc538f384795,
-    type: 3}
-  m_PointAction: {fileID: 1054132383583890850, guid: 598138e7a8735a1469b6fc538f384795,
-    type: 3}
-  m_MoveAction: {fileID: 7723093844229559393, guid: 598138e7a8735a1469b6fc538f384795,
-    type: 3}
-  m_SubmitAction: {fileID: -1546406753765214066, guid: 598138e7a8735a1469b6fc538f384795,
-    type: 3}
-  m_CancelAction: {fileID: -8157168456424202627, guid: 598138e7a8735a1469b6fc538f384795,
-    type: 3}
-  m_LeftClickAction: {fileID: 8056856818456041789, guid: 598138e7a8735a1469b6fc538f384795,
-    type: 3}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_TrackedDevicePositionAction: {fileID: 0}
-  m_TrackedDeviceOrientationAction: {fileID: 0}
-  m_TrackedDeviceSelectAction: {fileID: 0}
+  m_ForceModuleActive: 0

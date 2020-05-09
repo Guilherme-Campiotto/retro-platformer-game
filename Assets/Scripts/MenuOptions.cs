@@ -24,6 +24,8 @@ public class MenuOptions : MonoBehaviour
     public GameObject xboxImageTutorial;
     public GameObject keyboardImageTutorial;
 
+    public GameObject menuSystem;
+
     public GameObject resumeBtn;
     public bool fullScreen;
     public Toggle windowScreenToggle;
@@ -35,17 +37,11 @@ public class MenuOptions : MonoBehaviour
     public GameObject soundConfigButton;
     public AudioMixer audioMixer;
 
-    private bool ps4Controller = false;
-    private bool xboxOneController = false;
+    public bool ps4Controller = false;
+    public bool xboxOneController = false;
+    public bool genericController = false;
 
-    PlayerControlsNew controls;
-
-    private void Awake()
-    {
-        controls = new PlayerControlsNew();
-        controls.Gameplay.Cancel.performed += context => CancelAction();
-
-    }
+    public string cancelButton = "";
 
     // Start is called before the first frame update
     void Start()
@@ -67,6 +63,8 @@ public class MenuOptions : MonoBehaviour
         {
             windowScreenToggle.isOn = Screen.fullScreen;
         }
+
+        menuSystem = GameObject.Find("EventSystem");
 
     }
 
@@ -120,8 +118,7 @@ public class MenuOptions : MonoBehaviour
 
     void Update()
     {
-        /*
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel" + cancelButton))
         {
             if(controlsPanel != null && controlsPanel.activeSelf)
             {
@@ -134,29 +131,8 @@ public class MenuOptions : MonoBehaviour
                 CloseInstructionsPanel();
             }
         }
-        */
 
-        if(xboxImageControls != null && ps4ImageControls != null && keyboardImageControls != null)
-        {
-            CheckControllerConected();
-        }
-    }
-
-    void CancelAction()
-    {
-        Debug.Log("Cancelou a ação");
-        if (controlsPanel != null && controlsPanel.activeSelf)
-        {
-            CloseControlsPanel();
-        }
-        else if (settingsPanel != null && settingsPanel.activeSelf)
-        {
-            closeSettingsPanel();
-        }
-        else if (instructionsPanel != null && instructionsPanel.activeSelf)
-        {
-            CloseInstructionsPanel();
-        }
+        CheckControllerConected();
     }
 
     public void changeAudio()
@@ -257,30 +233,35 @@ public class MenuOptions : MonoBehaviour
                 //print("PS4 CONTROLLER IS CONNECTED");
                 ps4Controller = true;
                 xboxOneController = false;
+                break;
             } else if (names[x].Length == 33)
             {
                 //print("XBOX ONE CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = true;
+                break;
             }
-            else if (names[x].Length == 0)
+            else if (names[x].Length == 22)
             {
                 //print("Default CONTROLLER IS CONNECTED");
                 ps4Controller = false;
                 xboxOneController = false;
+                genericController = true;
+                break;
             } else
             {
                 //print("Using only keyboard");
                 ps4Controller = false;
                 xboxOneController = false;
+                genericController = false;
             }
         }
 
-        if (xboxOneController)
+        if (xboxOneController || genericController)
         {
-            xboxImageControls.SetActive(true);
-            ps4ImageControls.SetActive(false);
-            keyboardImageControls.SetActive(false);
+            if(xboxImageControls != null) xboxImageControls.SetActive(true);
+            if(ps4ImageControls != null) ps4ImageControls.SetActive(false);
+            if(keyboardImageControls != null) keyboardImageControls.SetActive(false);
 
             if(xboxImageTutorial != null && ps4ImageTutorial && keyboardImageTutorial != null)
             {
@@ -289,13 +270,19 @@ public class MenuOptions : MonoBehaviour
                 keyboardImageTutorial.SetActive(false);
             }
 
+            if (menuSystem)
+            {
+                menuSystem.GetComponent<StandaloneInputModule>().submitButton = "SubmitXbox";
+                menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "CancelXbox";
+            }
+
         }
         else if (ps4Controller)
         {
             //Adicionar imagem dos controles do ps4
-            xboxImageControls.SetActive(false);
-            ps4ImageControls.SetActive(true);
-            keyboardImageControls.SetActive(false);
+            if (xboxImageControls != null) xboxImageControls.SetActive(false);
+            if (ps4ImageControls != null) ps4ImageControls.SetActive(true);
+            if (keyboardImageControls != null) keyboardImageControls.SetActive(false);
 
             if (xboxImageTutorial != null && ps4ImageTutorial && keyboardImageTutorial != null)
             {
@@ -304,13 +291,20 @@ public class MenuOptions : MonoBehaviour
                 keyboardImageTutorial.SetActive(false);
             }
 
+            if (menuSystem)
+            {
+                print("SUBMIT normal");
+                menuSystem.GetComponent<StandaloneInputModule>().submitButton = "Submit";
+                menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "Cancel";
+            }
+
         }
         else
         {
             //Adicionar imagem dos controles do teclado
-            xboxImageControls.SetActive(false);
-            ps4ImageControls.SetActive(false);
-            keyboardImageControls.SetActive(true);
+            if (xboxImageControls != null) xboxImageControls.SetActive(false);
+            if (ps4ImageControls != null) ps4ImageControls.SetActive(false);
+            if (keyboardImageControls != null) keyboardImageControls.SetActive(true);
 
             if (xboxImageTutorial != null && ps4ImageTutorial && keyboardImageTutorial != null)
             {
@@ -318,6 +312,21 @@ public class MenuOptions : MonoBehaviour
                 ps4ImageTutorial.SetActive(false);
                 keyboardImageTutorial.SetActive(true);
             }
+
+            if (menuSystem)
+            {
+                print("SUBMIT xbox");
+                menuSystem.GetComponent<StandaloneInputModule>().submitButton = "SubmitXbox";
+                menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "CancelXbox";
+            }
+        }
+
+        if(xboxOneController || genericController)
+        {
+            cancelButton = "Xbox";
+        } else
+        {
+            cancelButton = "";
         }
     }
 
