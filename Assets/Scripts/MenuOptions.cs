@@ -315,7 +315,6 @@ public class MenuOptions : MonoBehaviour
 
             if (menuSystem)
             {
-                print("SUBMIT xbox");
                 menuSystem.GetComponent<StandaloneInputModule>().submitButton = "SubmitXbox";
                 menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "CancelXbox";
             }

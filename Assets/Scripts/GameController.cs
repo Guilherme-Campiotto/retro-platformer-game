@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
     SteamAchievements scriptAchievments;
 
     private int achievmentsCount;
+    private Coroutine coroutineHideCursor;
 
     public void Start()
     {
@@ -63,6 +64,11 @@ public class GameController : MonoBehaviour
         // Verificar depois nos testes como pegar essa informação na steam
         achievmentsCount = PlayerPrefs.GetInt("achievmentsCount");
 
+    }
+
+    public void Update()
+    {
+        CheckMouseMovement();
     }
 
     public IEnumerator RestartGame()
@@ -274,4 +280,29 @@ public class GameController : MonoBehaviour
         }
     }
 
+    private void CheckMouseMovement()
+    {
+        if (Input.GetAxis("Mouse X") == 0 && (Input.GetAxis("Mouse Y") == 0))
+        {
+            if (coroutineHideCursor == null)
+            {
+                coroutineHideCursor = StartCoroutine("HideCursor");
+            }
+        }
+        else
+        {
+            if (coroutineHideCursor != null)
+            {
+                StopCoroutine(coroutineHideCursor);
+                coroutineHideCursor = null;
+                Cursor.visible = true;
+            }
+        }
+    }
+
+    IEnumerator HideCursor()
+    {
+        yield return new WaitForSeconds(3);
+        Cursor.visible = false;
+    }
 }

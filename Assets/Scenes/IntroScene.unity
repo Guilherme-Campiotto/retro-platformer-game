@@ -703,7 +703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: But there was someone strong enough to jump thought that cliff.
+  m_Text: But there was someone strong enough to jump through that cliff.
 --- !u!222 &195112344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1271,6 +1271,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundController
       objectReference: {fileID: 0}
+    - target: {fileID: 5786347101379654987, guid: 54a5b01c38f05cf499e8968258b8efb8,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ad403fe5cb1141c4db962f01954ad170, type: 3}
     - target: {fileID: 5786347101379654986, guid: 54a5b01c38f05cf499e8968258b8efb8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1326,11 +1331,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5786347101379654987, guid: 54a5b01c38f05cf499e8968258b8efb8,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ad403fe5cb1141c4db962f01954ad170, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54a5b01c38f05cf499e8968258b8efb8, type: 3}
 --- !u!1 &966418507
@@ -1401,7 +1401,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exited, all went in search for the light.
+  m_Text: Desperate, they all ran in search for the light.
 --- !u!222 &966418510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1478,9 +1478,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This world, devastated long ago by a curse that have taken the colors of
-    everything the eyes can reach, housed only sad people, weakened by the lack of
-    colors.
+  m_Text: This world, devastated long ago by a curse that stole the color of everything
+    eyes can reach. All the  people depressed and weak by the miss of colors.
 --- !u!222 &1017548699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1610,7 +1609,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Everyone had given up, it was frustanting to him.
+  m_Text: Everyone had given up, it was frustanting.
 --- !u!222 &1154525827
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1726,7 +1725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The unknow was exciting, but also deadly.
+  m_Text: The unknown was exciting, could also be deadly.
 --- !u!222 &1165489804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1876,7 +1875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: One day, a light caught everyone's attention for a moment. It was the first
+  m_Text: Suddenly, a light caught everyone's attention for a moment. It was the first
     color seen in generations.
 --- !u!222 &1359947006
 CanvasRenderer:
@@ -2265,6 +2264,7 @@ MonoBehaviour:
   ps4ImageTutorial: {fileID: 0}
   xboxImageTutorial: {fileID: 0}
   keyboardImageTutorial: {fileID: 0}
+  menuSystem: {fileID: 0}
   resumeBtn: {fileID: 0}
   fullScreen: 0
   windowScreenToggle: {fileID: 0}
@@ -2275,6 +2275,10 @@ MonoBehaviour:
   soundOffSprite: {fileID: 0}
   soundConfigButton: {fileID: 0}
   audioMixer: {fileID: 0}
+  ps4Controller: 0
+  xboxOneController: 0
+  genericController: 0
+  cancelButton: 
 --- !u!114 &1792886276
 MonoBehaviour:
   m_ObjectHideFlags: 0
