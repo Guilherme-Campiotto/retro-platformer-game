@@ -237,6 +237,7 @@ public class CharacterController2D : MonoBehaviour
 
             deathCount++;
             deathCountStage++;
+            print("mortes na fase: " + deathCountStage);
             SaveDeathStatistics();
         }
     }
@@ -312,7 +313,8 @@ public class CharacterController2D : MonoBehaviour
     private void SaveDeathStatistics()
     {
         PlayerPrefs.SetInt("deathCount", deathCount);
-        Debug.Log("Deaths total: " + deathCount);
+        PlayerPrefs.SetInt("deathCountStage", deathCountStage);
+        //Debug.Log("Deaths total: " + deathCount);
 
         // Conquista morrer 20 vezes
         if(deathCount >= 20 && scriptAchievments != null)
@@ -327,6 +329,7 @@ public class CharacterController2D : MonoBehaviour
     private void LoadStatistics()
     {
         deathCount = PlayerPrefs.GetInt("deathCount");
+        deathCountStage = PlayerPrefs.GetInt("deathCountStage");
         jumpCount = PlayerPrefs.GetInt("jumpCount");
 
         Debug.Log("Jumps total: " + jumpCount);

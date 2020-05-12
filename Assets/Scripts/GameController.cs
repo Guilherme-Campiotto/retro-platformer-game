@@ -79,6 +79,8 @@ public class GameController : MonoBehaviour
 
     public void nextLevel()
     {
+        PlayerPrefs.SetInt("deathCountStage", 0);
+
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         levelComplete = true;
 

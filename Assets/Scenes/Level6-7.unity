@@ -992,6 +992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileTower
       objectReference: {fileID: 0}
+    - target: {fileID: 820638353784530187, guid: 2969897629e5a804d89b72f1a2be8700,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 820638353784530185, guid: 2969897629e5a804d89b72f1a2be8700,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1577,6 +1582,11 @@ PrefabInstance:
       propertyPath: firstShootTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 885171774189157435, guid: 11324ad56f6c1934e90ddbce4fb5ef0f,
+        type: 3}
+      propertyPath: missileLaunchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 401ab34d6f54c944783c330438212e72, type: 3}
     - target: {fileID: 2690493886227824931, guid: 11324ad56f6c1934e90ddbce4fb5ef0f,
         type: 3}
       propertyPath: m_SortingOrder
