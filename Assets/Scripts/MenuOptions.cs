@@ -313,11 +313,11 @@ public class MenuOptions : MonoBehaviour
                 keyboardImageTutorial.SetActive(true);
             }
 
-            if (menuSystem)
-            {
-                menuSystem.GetComponent<StandaloneInputModule>().submitButton = "SubmitXbox";
-                menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "CancelXbox";
-            }
+            //if (menuSystem)
+            //{
+            //    menuSystem.GetComponent<StandaloneInputModule>().submitButton = "SubmitXbox";
+            //    menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "CancelXbox";
+            //}
         }
 
         if(xboxOneController || genericController)
