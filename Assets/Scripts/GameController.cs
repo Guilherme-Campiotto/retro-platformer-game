@@ -100,8 +100,9 @@ public class GameController : MonoBehaviour
                 scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_8");
             }
 
-            endGamePanel.SetActive(true);
-        } else
+            SceneManager.LoadScene("Ending");
+        }
+        else
         {
             SaveProgress(nextScene);
 

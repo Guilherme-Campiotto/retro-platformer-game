@@ -445,4 +445,14 @@ public class MenuOptions : MonoBehaviour
             gameController.nextLevel();
         }
     }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void GoToCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
