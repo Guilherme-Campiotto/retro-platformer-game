@@ -41,7 +41,6 @@ public class StageSelectController : MonoBehaviour
         if(playerCurrentScene >= stageIndex)
         {
             SceneManager.LoadScene(stageIndex);
-            PlayerPrefs.SetInt("deathCountStage", 0);
         }
     }
 

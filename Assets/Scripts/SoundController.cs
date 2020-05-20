@@ -3,12 +3,15 @@
 public class SoundController : MonoBehaviour
 {
     public AudioSource audioSource;
+
     public static SoundController instance { get; private set; } = null;
     string sound;
 
     void Awake()
     {
-        if(gameObject.CompareTag("SoundController") && instance != null && instance != this)
+        //clickSound = Resources.Load<AudioClip>("Sounds/Sound_Effects/UI/Hit2");
+
+        if (gameObject.CompareTag("SoundController") && instance != null && instance != this)
         {
             Destroy(gameObject);
             return;
@@ -50,4 +53,5 @@ public class SoundController : MonoBehaviour
         audioSource.clip = music; 
         audioSource.Play();
     }
+
 }

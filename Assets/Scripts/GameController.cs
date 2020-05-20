@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     public static AudioClip theme5;
     public static AudioClip theme6;
     public static AudioClip themeIntro;
+    public static AudioClip themeEnding;
 
     private GameObject steamAchievements;
     SteamAchievements scriptAchievments;
@@ -79,7 +80,6 @@ public class GameController : MonoBehaviour
 
     public void nextLevel()
     {
-        PlayerPrefs.SetInt("deathCountStage", 0);
 
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         levelComplete = true;
@@ -91,13 +91,6 @@ public class GameController : MonoBehaviour
             {
                 Debug.Log("Achievement 1/6: Zerar o jogo");
                 scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_6");
-            }
-
-            // Conquista ultima fase sem morrer
-            if(player.GetComponent<CharacterController2D>().deathCountStage == 0 && scriptAchievments != null)
-            {
-                Debug.Log("Achievement 1/8: Passar ultima fase sem morrer");
-                scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_8");
             }
 
             SceneManager.LoadScene("Ending");
@@ -117,7 +110,7 @@ public class GameController : MonoBehaviour
             case 2:
                 if (themeIntro == null)
                 {
-                    theme1 = theme2 = theme3 = theme4 = theme5 = theme6 = null;
+                    theme1 = theme2 = theme3 = theme4 = theme5 = theme6 = themeEnding = null;
                     themeIntro = Resources.Load<AudioClip>("Sounds/Musics/Intro music - Deep_In_Space");
                     soundController.PlayWithLoop(themeIntro);
                 }
@@ -134,7 +127,7 @@ public class GameController : MonoBehaviour
             case 12:
                 if (theme1 == null)
                 {
-                    theme2 = theme3 = theme4 = theme5 = theme6 = null;
+                    themeIntro = theme2 = theme3 = theme4 = theme5 = theme6 = themeEnding = null;
                     theme1 = Resources.Load<AudioClip>("Sounds/Musics/Theme_1");
                     soundController.PlayWithLoop(theme1);
                 }
@@ -148,7 +141,7 @@ public class GameController : MonoBehaviour
             case 19:
                 if (theme2 == null)
                 {
-                    theme1 = theme3 = theme4 = theme5 = theme6 = null;
+                    themeIntro = theme1 = theme3 = theme4 = theme5 = theme6 = themeEnding = null;
                     theme2 = Resources.Load<AudioClip>("Sounds/Musics/Theme_2");
                     soundController.PlayWithLoop(theme2);
                 }
@@ -162,7 +155,7 @@ public class GameController : MonoBehaviour
             case 26:
                 if (theme3 == null)
                 {
-                    theme1 = theme2 = theme4 = theme5 = theme6 = null;
+                    themeIntro = theme1 = theme2 = theme4 = theme5 = theme6 = themeEnding = null;
                     theme3 = Resources.Load<AudioClip>("Sounds/Musics/Theme_3");
                     soundController.PlayWithLoop(theme3);
                 }
@@ -176,7 +169,7 @@ public class GameController : MonoBehaviour
             case 33:
                 if (theme4 == null)
                 {
-                    theme1 = theme2 = theme3 = theme5 = theme6 = null;
+                    themeIntro = theme1 = theme2 = theme3 = theme5 = theme6 = themeEnding = null;
                     theme4 = Resources.Load<AudioClip>("Sounds/Musics/Theme_4");
                     soundController.PlayWithLoop(theme4);
                 }
@@ -190,7 +183,7 @@ public class GameController : MonoBehaviour
             case 40:
                 if (theme5 == null)
                 {
-                    theme1 = theme2 = theme3 = theme4 = theme6 = null;
+                    themeIntro = theme1 = theme2 = theme3 = theme4 = theme6 = themeEnding = null;
                     theme5 = Resources.Load<AudioClip>("Sounds/Musics/Theme_5");
                     soundController.PlayWithLoop(theme5);
                 }
@@ -204,9 +197,18 @@ public class GameController : MonoBehaviour
             case 47:
                 if (theme6 == null)
                 {
-                    theme1 = theme2 = theme3 = theme4 = theme5 = null;
+                    themeIntro = theme1 = theme2 = theme3 = theme4 = theme5 = themeEnding = null;
                     theme6 = Resources.Load<AudioClip>("Sounds/Musics/Theme_6");
                     soundController.PlayWithLoop(theme6);
+                }
+                break;
+            case 48:
+                
+                if (themeEnding == null)
+                {
+                    themeIntro = theme1 = theme2 = theme3 = theme4 = theme5 = theme6 = null;
+                    themeEnding = Resources.Load<AudioClip>("Sounds/Musics/Ending_Music");
+                    soundController.PlayWithLoop(themeEnding);
                 }
                 break;
         }
@@ -308,4 +310,5 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(3);
         Cursor.visible = false;
     }
+
 }

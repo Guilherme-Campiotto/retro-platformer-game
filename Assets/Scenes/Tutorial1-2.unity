@@ -739,6 +739,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3110219635021683245, guid: c3bb8d110379bf9498fbeb52a92823a0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bb8d110379bf9498fbeb52a92823a0, type: 3}
 --- !u!1001 &814602366
@@ -940,6 +946,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3110219635021683245, guid: c3bb8d110379bf9498fbeb52a92823a0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bb8d110379bf9498fbeb52a92823a0, type: 3}
 --- !u!1 &906781384 stripped
@@ -1041,6 +1053,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3110219635021683245, guid: c3bb8d110379bf9498fbeb52a92823a0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bb8d110379bf9498fbeb52a92823a0, type: 3}
 --- !u!1001 &990484782
@@ -1160,6 +1178,61 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 660224910302308583, guid: 2e9da4e1fe9d5974184d99df37637e29,
+        type: 3}
+      propertyPath: ps4ImageTutorial
+      value: 
+      objectReference: {fileID: 1183828939}
+    - target: {fileID: 660224910302308583, guid: 2e9da4e1fe9d5974184d99df37637e29,
+        type: 3}
+      propertyPath: xboxImageTutorial
+      value: 
+      objectReference: {fileID: 239542573}
+    - target: {fileID: 660224910302308583, guid: 2e9da4e1fe9d5974184d99df37637e29,
+        type: 3}
+      propertyPath: keyboardImageTutorial
+      value: 
+      objectReference: {fileID: 1293640324}
+    - target: {fileID: 915179221, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 194
+      objectReference: {fileID: 0}
+    - target: {fileID: 230556702910174520, guid: 2e9da4e1fe9d5974184d99df37637e29,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 729542405, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e7997beef56c26429d42abcc9501966,
+        type: 3}
+    - target: {fileID: 915179218, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038326864, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -268
+      objectReference: {fileID: 0}
+    - target: {fileID: 713286745, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -267.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091160843, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a8fcc1b6c30f714b8f361e5819a3c00,
+        type: 3}
+    - target: {fileID: 1844572173, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70411eec54899ea4aa909eebc3796190,
+        type: 3}
+    - target: {fileID: 1563837835, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
+      propertyPath: m_Text
+      value: JUMP TWICE TO DO A DOUBLE JUMP!
+      objectReference: {fileID: 0}
     - target: {fileID: 660224910129549500, guid: 2e9da4e1fe9d5974184d99df37637e29,
         type: 3}
       propertyPath: m_text
@@ -1219,61 +1292,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_margin.x
       value: 8.266075
-      objectReference: {fileID: 0}
-    - target: {fileID: 660224910302308583, guid: 2e9da4e1fe9d5974184d99df37637e29,
-        type: 3}
-      propertyPath: ps4ImageTutorial
-      value: 
-      objectReference: {fileID: 1183828939}
-    - target: {fileID: 660224910302308583, guid: 2e9da4e1fe9d5974184d99df37637e29,
-        type: 3}
-      propertyPath: xboxImageTutorial
-      value: 
-      objectReference: {fileID: 239542573}
-    - target: {fileID: 660224910302308583, guid: 2e9da4e1fe9d5974184d99df37637e29,
-        type: 3}
-      propertyPath: keyboardImageTutorial
-      value: 
-      objectReference: {fileID: 1293640324}
-    - target: {fileID: 915179221, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 194
-      objectReference: {fileID: 0}
-    - target: {fileID: 230556702910174520, guid: 2e9da4e1fe9d5974184d99df37637e29,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 729542405, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2e7997beef56c26429d42abcc9501966,
-        type: 3}
-    - target: {fileID: 915179218, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1038326864, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -268
-      objectReference: {fileID: 0}
-    - target: {fileID: 713286745, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -267.99997
-      objectReference: {fileID: 0}
-    - target: {fileID: 1091160843, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7a8fcc1b6c30f714b8f361e5819a3c00,
-        type: 3}
-    - target: {fileID: 1844572173, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 70411eec54899ea4aa909eebc3796190,
-        type: 3}
-    - target: {fileID: 1563837835, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
-      propertyPath: m_Text
-      value: JUMP TWICE TO DO A DOUBLE JUMP!
       objectReference: {fileID: 0}
     - target: {fileID: 713286746, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
       propertyPath: m_text
@@ -1857,6 +1875,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3110219635021683245, guid: c3bb8d110379bf9498fbeb52a92823a0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bb8d110379bf9498fbeb52a92823a0, type: 3}
 --- !u!1001 &1730108011
@@ -2385,15 +2409,15 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 1057646319}
-    - target: {fileID: 4968219357995338622, guid: 84d38e06f7696bd4fbe267565fe1afdf,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2006778254304280970, guid: 84d38e06f7696bd4fbe267565fe1afdf,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4968219357995338622, guid: 84d38e06f7696bd4fbe267565fe1afdf,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4968219357995338625, guid: 84d38e06f7696bd4fbe267565fe1afdf,
         type: 3}

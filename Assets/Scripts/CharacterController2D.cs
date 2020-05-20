@@ -50,7 +50,6 @@ public class CharacterController2D : MonoBehaviour
     public bool dead = false;
 
     public int deathCount;
-    public int deathCountStage;
     public int jumpCount;
     public float stageTime;
 
@@ -236,8 +235,6 @@ public class CharacterController2D : MonoBehaviour
             StartCoroutine(MakePlayerDie());
 
             deathCount++;
-            deathCountStage++;
-            print("mortes na fase: " + deathCountStage);
             SaveDeathStatistics();
         }
     }
@@ -313,7 +310,6 @@ public class CharacterController2D : MonoBehaviour
     private void SaveDeathStatistics()
     {
         PlayerPrefs.SetInt("deathCount", deathCount);
-        PlayerPrefs.SetInt("deathCountStage", deathCountStage);
         //Debug.Log("Deaths total: " + deathCount);
 
         // Conquista morrer 20 vezes
@@ -329,7 +325,6 @@ public class CharacterController2D : MonoBehaviour
     private void LoadStatistics()
     {
         deathCount = PlayerPrefs.GetInt("deathCount");
-        deathCountStage = PlayerPrefs.GetInt("deathCountStage");
         jumpCount = PlayerPrefs.GetInt("jumpCount");
 
         Debug.Log("Jumps total: " + jumpCount);

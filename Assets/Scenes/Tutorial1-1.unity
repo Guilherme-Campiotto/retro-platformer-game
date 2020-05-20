@@ -416,7 +416,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2fbfba509c0d7254aadde180daa58d77,
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
         type: 3}
     - target: {fileID: 713575952898140838, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -1066,7 +1066,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2fbfba509c0d7254aadde180daa58d77,
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
         type: 3}
     - target: {fileID: 713575952898140838, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -1535,7 +1535,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2fbfba509c0d7254aadde180daa58d77,
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
         type: 3}
     - target: {fileID: 713575952898140838, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -1749,7 +1749,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2fbfba509c0d7254aadde180daa58d77,
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
         type: 3}
     - target: {fileID: 713575952898140838, guid: 1ee524a732580c449b0e3d8cc813dd12,
         type: 3}
@@ -1956,16 +1956,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 660224910302308581, guid: 2e9da4e1fe9d5974184d99df37637e29,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
     - target: {fileID: 660224910036815537, guid: 2e9da4e1fe9d5974184d99df37637e29,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 660224910302308581, guid: 2e9da4e1fe9d5974184d99df37637e29,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 915179218, guid: 2e9da4e1fe9d5974184d99df37637e29, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2165,6 +2165,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3110219635021683245, guid: c3bb8d110379bf9498fbeb52a92823a0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1faa6e622aaea06449e46586458b6e0a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bb8d110379bf9498fbeb52a92823a0, type: 3}
 --- !u!1001 &2564036075867110142
@@ -2420,21 +2426,6 @@ MonoBehaviour:
   m_Script: {fileID: 617180565}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_ActionsAsset: {fileID: 0}
-  m_PointAction: {fileID: 0}
-  m_MoveAction: {fileID: 0}
-  m_SubmitAction: {fileID: 0}
-  m_CancelAction: {fileID: 0}
-  m_LeftClickAction: {fileID: 0}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_TrackedDevicePositionAction: {fileID: 0}
-  m_TrackedDeviceOrientationAction: {fileID: 0}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
 --- !u!1001 &5786347101425476654
 PrefabInstance:
   m_ObjectHideFlags: 0

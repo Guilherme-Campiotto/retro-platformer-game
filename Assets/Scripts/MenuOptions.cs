@@ -455,4 +455,12 @@ public class MenuOptions : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+
+    public void ClickSound(AudioClip sound)
+    {
+        if (soundController != null)
+        {
+            soundController.PlayAudioOnce(sound, 1f);
+        }
+    }
 }
