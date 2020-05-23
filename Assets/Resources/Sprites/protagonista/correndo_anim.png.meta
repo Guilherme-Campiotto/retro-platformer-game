@@ -140,12 +140,12 @@ TextureImporter:
       name: correndo_anim2_0
       rect:
         serializedVersion: 2
-        x: 75
+        x: 0
         y: 0
-        width: 279
-        height: 586
+        width: 431
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: correndo_anim2_1
       rect:
         serializedVersion: 2
-        x: 432
+        x: 426
         y: 0
-        width: 422
-        height: 584
+        width: 431
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,9 +185,9 @@ TextureImporter:
         x: 856
         y: 0
         width: 431
-        height: 587
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: correndo_anim2_3
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 1
-        width: 337
-        height: 577
+        x: 1288
+        y: 0
+        width: 431
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: correndo_anim2_4
       rect:
         serializedVersion: 2
-        x: 1755
+        x: 1711
         y: 0
-        width: 348
+        width: 431
         height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,11 +246,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2143
-        y: 1
-        width: 430
-        height: 578
+        y: 0
+        width: 431
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,10 +268,10 @@ TextureImporter:
         serializedVersion: 2
         x: 2582
         y: 0
-        width: 408
-        height: 578
+        width: 431
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: correndo_anim2_7
       rect:
         serializedVersion: 2
-        x: 3026
+        x: 3012
         y: 0
-        width: 378
-        height: 590
+        width: 431
+        height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: correndo_anim2_8
       rect:
         serializedVersion: 2
-        x: 3450
+        x: 3426
         y: 0
-        width: 388
+        width: 431
         height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
