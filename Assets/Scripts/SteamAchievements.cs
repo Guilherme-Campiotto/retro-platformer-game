@@ -58,15 +58,12 @@ public class SteamAchievements : MonoBehaviour
         if(!isAchievementCollected)
         {
             unlockAchievementsCount++;
-            PlayerPrefs.SetInt("unlockAchievementsCount", unlockAchievementsCount);
-            Debug.Log("Conquistas conquistadas: " + unlockAchievementsCount);
             SteamUserStats.SetAchievement(id);
             SteamUserStats.StoreStats();
 
 
-            if(unlockAchievementsCount == 10)
+            if(unlockAchievementsCount == 9)
             {
-                Debug.Log("Achievement 1/12: Pegar todas as conquistas");
                 UnlockSteamAchievement("NEW_ACHIEVEMENT_1_11");
             }
         }

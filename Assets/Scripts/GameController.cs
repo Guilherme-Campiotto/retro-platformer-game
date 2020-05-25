@@ -32,6 +32,8 @@ public class GameController : MonoBehaviour
     private int achievmentsCount;
     private Coroutine coroutineHideCursor;
 
+    private string[] achievementsIdList = new string[10] { "NEW_ACHIEVEMENT_1_0", "NEW_ACHIEVEMENT_1_1", "NEW_ACHIEVEMENT_1_2", "NEW_ACHIEVEMENT_1_3", "NEW_ACHIEVEMENT_1_4", "NEW_ACHIEVEMENT_1_6", "NEW_ACHIEVEMENT_1_7", "NEW_ACHIEVEMENT_1_9", "NEW_ACHIEVEMENT_1_10", "NEW_ACHIEVEMENT_1_11" };
+
     public void Start()
     {
 
@@ -276,10 +278,9 @@ public class GameController : MonoBehaviour
     {
         if(scriptAchievments != null && steamAchievements.activeSelf)
         {
-            SteamAchievements.unlockAchievementsCount = PlayerPrefs.GetInt("unlockAchievementsCount");
-            if(SteamAchievements.unlockAchievementsCount >= 10)
+            CheckNumberOfAchievementsCount();
+            if (SteamAchievements.unlockAchievementsCount == 9)
             {
-                Debug.Log("Achievement 1/12: Pegar todas as conquistas");
                 scriptAchievments.UnlockSteamAchievement("NEW_ACHIEVEMENT_1_11");
             }
         }
@@ -309,6 +310,22 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         Cursor.visible = false;
+    }
+
+    private void CheckNumberOfAchievementsCount()
+    {
+        SteamAchievements.unlockAchievementsCount = 0;
+
+        foreach (string achiev in achievementsIdList) {
+            scriptAchievments.TestSteamAchievement(achiev);
+            if(scriptAchievments.isAchievementCollected)
+            {
+                SteamAchievements.unlockAchievementsCount++;
+            }
+        }
+
+        //Debug.Log("Achievements count total: " + SteamAchievements.unlockAchievementsCount);
+
     }
 
 }

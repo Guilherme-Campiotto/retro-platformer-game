@@ -108,9 +108,6 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 
-        // Remove when game is launched.
-        DebugControls();
-
     }
 
 
