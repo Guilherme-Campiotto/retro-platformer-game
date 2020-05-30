@@ -68,6 +68,27 @@ public class MenuOptions : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        if (Input.GetButtonDown("Cancel" + cancelButton))
+        {
+            if (controlsPanel != null && controlsPanel.activeSelf)
+            {
+                CloseControlsPanel();
+            }
+            else if (settingsPanel != null && settingsPanel.activeSelf)
+            {
+                closeSettingsPanel();
+            }
+            else if (instructionsPanel != null && instructionsPanel.activeSelf)
+            {
+                CloseInstructionsPanel();
+            }
+        }
+
+        CheckControllerConected();
+    }
+
     private void RemoveResolutionsNotSupported()
     {
         if(dropdownMenu != null)
@@ -114,25 +135,6 @@ public class MenuOptions : MonoBehaviour
 
         }
 
-    }
-
-    void Update()
-    {
-        if (Input.GetButtonDown("Cancel" + cancelButton))
-        {
-            if(controlsPanel != null && controlsPanel.activeSelf)
-            {
-                CloseControlsPanel();
-            } else if(settingsPanel != null && settingsPanel.activeSelf)
-            {
-                closeSettingsPanel();
-            } else if(instructionsPanel != null && instructionsPanel.activeSelf)
-            {
-                CloseInstructionsPanel();
-            }
-        }
-
-        CheckControllerConected();
     }
 
     public void changeAudio()
@@ -224,17 +226,17 @@ public class MenuOptions : MonoBehaviour
 
     public void CheckControllerConected()
     {
-        
         string[] names = Input.GetJoystickNames();
         for (int x = 0; x < names.Length; x++)
         {
-            if (names[x].Length == 19)
+            //print(names[x]);
+            if (("Wireless Controller").Equals(names[x]))
             {
                 //print("PS4 CONTROLLER IS CONNECTED");
                 ps4Controller = true;
                 xboxOneController = false;
                 break;
-            } else if (names[x].Length == 33)
+            } else if (("Xbox Bluetooth Gamepad").Equals(names[x]) || ("Controller (Xbox One For Windows)").Equals(names[x]))
             {
                 //print("XBOX ONE CONTROLLER IS CONNECTED");
                 ps4Controller = false;
@@ -255,6 +257,7 @@ public class MenuOptions : MonoBehaviour
                 xboxOneController = false;
                 genericController = false;
             }
+
         }
 
         if (xboxOneController || genericController)
@@ -293,7 +296,7 @@ public class MenuOptions : MonoBehaviour
 
             if (menuSystem)
             {
-                print("SUBMIT normal");
+                //print("SUBMIT normal");
                 menuSystem.GetComponent<StandaloneInputModule>().submitButton = "Submit";
                 menuSystem.GetComponent<StandaloneInputModule>().cancelButton = "Cancel";
             }

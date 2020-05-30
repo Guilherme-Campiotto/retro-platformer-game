@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             CheckWallSlide();
         }
         
-        if(Input.GetButtonDown("Pause"))
+        if(Input.GetButtonDown("Pause") || Input.GetButtonDown("Pause" + controllerName))
         {
             isGamePaused = true;
             menuOptions.ChangeGameState();

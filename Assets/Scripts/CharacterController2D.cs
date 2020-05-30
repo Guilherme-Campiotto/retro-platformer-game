@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour
     private SoundController soundController;
     public Animator animator;
     public Animator animatorFadeLevel;
+    public Animator levelComplete;
 
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
@@ -73,6 +74,7 @@ public class CharacterController2D : MonoBehaviour
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
         GameObject levelLoader = GameObject.Find("LevelLoader");
         animatorFadeLevel = levelLoader.gameObject.transform.Find("Crossfade").gameObject.GetComponent<Animator>();
+        levelComplete = getAnimatorLevelComplete();
         LoadStatistics();
         steamAchievements = GameObject.Find("SteamAchievements");
 
@@ -214,10 +216,10 @@ public class CharacterController2D : MonoBehaviour
         {
             animator.speed = 0;
             soundController.PlayAudioOnce(collectedItem);
-            collision.gameObject.SetActive(false);
+            StartCoroutine(LevelComplete());
+            //collision.gameObject.SetActive(false);
             GetComponent<Rigidbody2D>().simulated = false;
             dead = true;
-            StartCoroutine(GoToNextLevel());
         }
 
         CheckHazard(collision.gameObject);
@@ -252,6 +254,15 @@ public class CharacterController2D : MonoBehaviour
 
         StartCoroutine(gameController.RestartGame());
 
+    }
+    IEnumerator LevelComplete()
+    {
+        if(levelComplete != null)
+        {
+            levelComplete.SetTrigger("LevelPassedCheck");
+        }
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(GoToNextLevel());
     }
 
     IEnumerator GoToNextLevel()
@@ -324,11 +335,32 @@ public class CharacterController2D : MonoBehaviour
         deathCount = PlayerPrefs.GetInt("deathCount");
         jumpCount = PlayerPrefs.GetInt("jumpCount");
 
-        Debug.Log("Jumps total: " + jumpCount);
+        //Debug.Log("Jumps total: " + jumpCount);
     }
 
     private void UpdateTimer()
     {
         stageTime += Time.deltaTime;
+    }
+
+    private Animator getAnimatorLevelComplete()
+    {
+        Animator animator = null;
+        for(int i = 1; i <= 6; i++)
+        {
+            GameObject gameObject = GameObject.Find("GoalWorld" + i);
+            if(gameObject != null)
+            {
+                animator = gameObject.GetComponent<Animator>();
+            }
+
+            if(animator != null)
+            {
+                return animator;
+            }
+        }
+
+        return animator;
+
     }
 }
