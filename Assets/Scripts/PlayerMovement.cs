@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             if(menuOptions.ps4Controller)
             {
                 controllerName = "Ps4";
-            } else
+            } else if(menuOptions.xboxOneController || menuOptions.genericController)
             {
                 controllerName = "Xbox";
             }

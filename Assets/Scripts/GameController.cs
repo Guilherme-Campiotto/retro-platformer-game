@@ -36,8 +36,7 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-
-        if(gravityController != null)
+        if (gravityController != null)
         {
             gravityController.setGravityDefault();
         }
@@ -86,7 +85,7 @@ public class GameController : MonoBehaviour
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         levelComplete = true;
 
-        if (nextScene == SceneManager.sceneCountInBuildSettings)
+        if (nextScene == 48)
         {
             // Conquista zerar o jogo
             if(scriptAchievments != null)

@@ -10,13 +10,19 @@ public class GravityController : MonoBehaviour
 
     public void Start()
     {
+        GameObject playerObject = GameObject.Find("Player");
+
+        if (playerObject != null)
+        {
+            player = playerObject.GetComponent<CharacterController2D>();
+        }
+
         soundController = GameObject.Find("SoundController").GetComponent<SoundController>();
         setGravityDefault();
     }
 
     public void InvertGravity()
     {
-
         float gravityLevel = Physics2D.gravity.y;
 
         if (gravityInverted && Physics2D.gravity.y < 0)
@@ -64,7 +70,7 @@ public class GravityController : MonoBehaviour
             // Reset gravity to normal if it is the start of the level.
             gravityLevel = -Mathf.Abs(gravityLevel);
             Physics2D.gravity = new Vector2(Physics2D.gravity.x, gravityLevel);
-            if(player.invertedGravity)
+            if(player != null && player.invertedGravity)
             {
                 player.InvertGravityControls();
             }

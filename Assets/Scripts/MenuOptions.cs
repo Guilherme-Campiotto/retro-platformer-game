@@ -34,12 +34,15 @@ public class MenuOptions : MonoBehaviour
     public Animator animator;
     public Sprite soundOnSprite;
     public Sprite soundOffSprite;
+    public Slider soundSlider;
     public GameObject soundConfigButton;
     public AudioMixer audioMixer;
 
     public bool ps4Controller = false;
     public bool xboxOneController = false;
     public bool genericController = false;
+
+    public Text controllerName;
 
     public string cancelButton = "";
 
@@ -121,12 +124,21 @@ public class MenuOptions : MonoBehaviour
     {
         soundConfig = null;
         soundConfig = PlayerPrefs.GetString("Sound");
+        float volume = -20;
+        volume = PlayerPrefs.GetFloat("Volume");
 
-        if(soundConfigButton != null)
+        if (soundConfigButton != null)
         {
             if (soundConfig == "On")
             {
                 soundConfigButton.GetComponent<Image>().sprite = soundOnSprite;
+
+                SetVolume(volume);
+                if(soundSlider != null)
+                {
+                    soundSlider.SetValueWithoutNotify(volume);
+                }
+
             }
             else
             {
@@ -134,6 +146,8 @@ public class MenuOptions : MonoBehaviour
             }
 
         }
+
+
 
     }
 
@@ -230,7 +244,13 @@ public class MenuOptions : MonoBehaviour
         for (int x = 0; x < names.Length; x++)
         {
             //print(names[x]);
-            if (("Wireless Controller").Equals(names[x]))
+
+            //if(names[x]. Length > 0 && controllerName != null)
+            //{
+            //    controllerName.text = names[x];
+            //}
+
+            if (("Wireless Controller").Equals(names[x]) || ("Controle DualShock 4 (PS4)").Equals("names[x]"))
             {
                 //print("PS4 CONTROLLER IS CONNECTED");
                 ps4Controller = true;
@@ -243,7 +263,7 @@ public class MenuOptions : MonoBehaviour
                 xboxOneController = true;
                 break;
             }
-            else if (names[x].Length == 22)
+            else if (names[x].Length > 1)
             {
                 //print("Default CONTROLLER IS CONNECTED");
                 ps4Controller = false;
@@ -438,6 +458,10 @@ public class MenuOptions : MonoBehaviour
 
             soundConfigButton.GetComponent<Image>().sprite = soundOnSprite;
         }
+
+        //Debug.Log("Volume setado: " + volume);
+
+        PlayerPrefs.SetFloat("Volume", volume);
         PlayerPrefs.SetString("Sound", soundConfig);
     }
 

@@ -67,7 +67,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 7
+    axis: 6
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal
@@ -103,7 +103,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
+    descriptiveName: Gamepad D-pad
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
