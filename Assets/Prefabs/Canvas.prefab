@@ -1869,6 +1869,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 5720931325729618911, guid: 19a96681d0f896a4395c091246e49135,
+        type: 3}
+      propertyPath: m_Text
+      value: Pay Me In Colors
+      objectReference: {fileID: 0}
     - target: {fileID: 6249623102458497180, guid: 19a96681d0f896a4395c091246e49135,
         type: 3}
       propertyPath: m_AnchoredPosition.y

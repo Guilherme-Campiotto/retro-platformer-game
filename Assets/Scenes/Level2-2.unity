@@ -1085,6 +1085,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SteamManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6874177521281259943, guid: 1eea47fdbe98ac84082f24c1f670bc87,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6874177521281259961, guid: 1eea47fdbe98ac84082f24c1f670bc87,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2529,6 +2534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SteamAchievements
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533189192678540235, guid: 4487bb0c7e38fa44e99dab869b05c2ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4487bb0c7e38fa44e99dab869b05c2ab, type: 3}

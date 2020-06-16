@@ -273,6 +273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SteamManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6874177521281259943, guid: 1eea47fdbe98ac84082f24c1f670bc87,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6874177521281259961, guid: 1eea47fdbe98ac84082f24c1f670bc87,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -337,11 +342,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1533189192678540235, guid: 4487bb0c7e38fa44e99dab869b05c2ab,
-        type: 3}
-      propertyPath: m_Name
-      value: SteamAchievements
-      objectReference: {fileID: 0}
     - target: {fileID: 1533189192678540233, guid: 4487bb0c7e38fa44e99dab869b05c2ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -396,6 +396,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533189192678540235, guid: 4487bb0c7e38fa44e99dab869b05c2ab,
+        type: 3}
+      propertyPath: m_Name
+      value: SteamAchievements
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533189192678540235, guid: 4487bb0c7e38fa44e99dab869b05c2ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4487bb0c7e38fa44e99dab869b05c2ab, type: 3}
@@ -489,16 +499,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5786347101379654988, guid: 54a5b01c38f05cf499e8968258b8efb8,
-        type: 3}
-      propertyPath: m_Name
-      value: SoundController
-      objectReference: {fileID: 0}
-    - target: {fileID: 5786347101379654987, guid: 54a5b01c38f05cf499e8968258b8efb8,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ad403fe5cb1141c4db962f01954ad170, type: 3}
     - target: {fileID: 5786347101379654986, guid: 54a5b01c38f05cf499e8968258b8efb8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -553,6 +553,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786347101379654987, guid: 54a5b01c38f05cf499e8968258b8efb8,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ad403fe5cb1141c4db962f01954ad170, type: 3}
+    - target: {fileID: 5786347101379654988, guid: 54a5b01c38f05cf499e8968258b8efb8,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundController
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54a5b01c38f05cf499e8968258b8efb8, type: 3}
@@ -846,11 +856,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   soundOnSprite: {fileID: 0}
   soundOffSprite: {fileID: 0}
+  soundSlider: {fileID: 0}
   soundConfigButton: {fileID: 0}
   audioMixer: {fileID: 0}
   ps4Controller: 0
   xboxOneController: 0
   genericController: 0
+  controllerName: {fileID: 0}
   cancelButton: 
 --- !u!114 &1792886276
 MonoBehaviour:
